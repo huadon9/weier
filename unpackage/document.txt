@@ -1,0 +1,17 @@
+# 项目说明
+本项目有两大目录 src 和 unpackage src是用于生产的文件目录 unpackage用于开发
+原则上做更改是在unpackage进行，但是src也可直接进行更改，一旦这样更改后，不能再启用unpackage的gulp，不然src做的更改会被覆盖
+
+#初次使用
+首次使用要先确定电脑已安装node和npm，然后在unpackage目录下执行npm install 安装所依赖的库
+然后执行gulp （这里的gulp主要是用来处理scss）
+
+#文件目录说明
+assets是公共的文件目录
+这里的images文件夹会被直接复制到src目录下
+这里的js文件夹下的所有文件会被合并到同一个文件以减少请求次数
+这里的css文件夹下的文件会被合并到页面各自的css文件中
+
+pages文件夹是页面的目录
+每个子目录对应不同的页面
+子目录下面是页面对应的文件

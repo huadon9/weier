@@ -1,0 +1,48 @@
+@import '../../assets/css/common.scss';
+
+.message-list {
+    background-color: #fff;
+    padding: 0 15px;
+    .list-item{
+        display: flex;
+        flex-direction: row;
+        height: 71px;
+        border-bottom: 0.5px solid $moreLightColor;
+        &:nth-last-child(1){
+            border: none;
+        }
+        .l{
+            width: 71px;
+            .img{
+                width: 48px;
+                height: 48px;
+                border-radius: 3px;
+                overflow: hidden;
+                border: 0.5px solid $moreLightColor;
+                margin: 11px 0 0 11px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .c{
+            flex: 1;
+            .title{
+                font-size: 14px;
+                color: #000;
+                margin-top: 13px;
+                @include lineClamp(1);
+                padding-left: 6px;
+            }
+            .info{
+                color: $moreLightColor;
+                margin-top: 7px;
+            }
+        }
+        .r{
+            width: 60px;
+            color: $moreLightColor;
+            line-height: 71px;
+        }
+    }
+}
