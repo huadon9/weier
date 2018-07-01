@@ -1,0 +1,143 @@
+@import '../../assets/css/common.scss';
+
+.home-content{
+    background-color: #fff;
+    overflow: hidden;
+}
+.search-top{
+    width: 100%;
+    margin-top: 10px;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    height: 84px;
+    background-color: $themeColor;
+
+    .header-img{
+        width: 81px;
+        .img{
+            width: 61px;
+            height: 61px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 12px 0 0 20px;
+            img{
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+    .name-money{
+        flex: 1;        
+        color: #fff;
+        padding: 10px 0 0 10px;
+        position: relative;
+        .name{
+            font-size: 15px;
+            margin-top: 12px;
+        }
+        .money{
+            margin-top: 4px;
+        }
+        .date-show{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: #fff;
+            z-index: 99;
+            .year{
+                font-size: 10px;
+            }
+            .month{
+                font-size: 20px;
+                .tri{
+                    font-size: 12px;
+                }
+                .deco{
+                    font-size: 12px;
+                    padding: 0 10px 0 4px;
+                }
+            }
+        }
+        .monthSelect{
+            width: 72px;
+            height: 45px;
+            position: absolute;
+            z-index: 102;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+    }
+}
+.sub-select{
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.5px solid $moreLightColor;
+    div{
+        flex: 1;
+        color: $fontColor;
+        text-align: center;
+        line-height: 42px;
+        position: relative;
+        &.active{
+            color: $themeColor;
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                height: 1px;
+                width: 44px;
+                bottom: 0;
+                left: 50%;
+                margin-left: -26px;
+                background-color: $themeColor;
+            }
+        }
+        &.asc{
+            &::after{
+                content: '↾';
+                font-size: 14px;
+            }
+        }
+        &.des{
+            &::after{
+                content: '⇂';
+                font-size: 14px;
+            }
+        }
+    }
+}
+.add-handle{
+    text-align: right;
+    margin: 10px 0;
+    button{
+        width: 55px;
+        height: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: $themeColor;
+        color: #fff;
+        &.added{
+            background-color: #BDBDBD;
+        }
+    }
+}
+.cd-list{
+    .list-item{
+        padding: 10px 13px;
+        border-bottom: 6px solid $backgroundColor;
+        .money{
+            font-size: 18px;
+            color: $fontColor;
+            text-align: center;
+        }
+        .info{
+            line-height: 20px;
+            color: $lightFontColor;
+            overflow: hidden;
+        }
+    }
+}

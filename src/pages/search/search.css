@@ -64,27 +64,28 @@ body {
   left: 0;
   z-index: 99;
   font-size: 15px;
-  background-color: #fff; }
-  .we-header .title {
-    text-align: center;
-    position: absolute;
-    left: 50px;
-    right: 50px; }
-  .we-header .we-pull-left {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    margin-left: 10px; }
-  .we-header .we-pull-right {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    margin-right: 10px; }
+  background-color: #fff;
+  border-bottom: 0.5px solid #999; }
 
 .we-bar {
   width: 100%;
   height: 100%;
   position: relative; }
+  .we-bar .title {
+    text-align: center;
+    position: absolute;
+    left: 50px;
+    right: 50px; }
+  .we-bar .we-pull-left {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-left: 10px; }
+  .we-bar .we-pull-right {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 10px; }
 
 .we-pull-left {
   float: left; }

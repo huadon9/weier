@@ -1,0 +1,68 @@
+@import '../../assets/css/common.scss';
+
+.home-content{
+    background-color: #fff;
+    overflow: hidden;
+}
+.search-top{
+    width: 100%;
+    margin-top: 10px;
+}
+.sub-select{
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    border-top: 0.5px solid $moreLightColor;
+    div{
+        flex: 1;
+        color: $fontColor;
+        text-align: center;
+        line-height: 42px;
+        position: relative;
+        &.active{
+            color: $themeColor;
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                height: 1px;
+                bottom: 0;
+                left: 15px;
+                right: 15px;
+                background-color: $themeColor;
+            }
+        }
+        &.asc{
+            &::after{
+                content: '↾';
+                font-size: 14px;
+            }
+        }
+        &.des{
+            &::after{
+                content: '⇂';
+                font-size: 14px;
+            }
+        }
+    }
+}
+.add-handle{
+    text-align: right;
+    margin: 10px 0;
+    button{
+        width: 55px;
+        height: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: $themeColor;
+        color: #fff;
+        &.added{
+            background-color: #BDBDBD;
+        }
+    }
+}
+.me-list .list-item:after{
+    left: 0;
+    right: 0;
+}

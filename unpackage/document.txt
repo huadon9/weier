@@ -15,3 +15,15 @@ assets是公共的文件目录
 pages文件夹是页面的目录
 每个子目录对应不同的页面
 子目录下面是页面对应的文件
+
+#页面对应说明
+comDetail 佣金明细
+disProList 分销商品列表
+home 首页
+levelDetail 等级详情
+lookStore 查看网店
+message 信息
+myLevel 我的等级
+personal 个人中心
+ranking 排行榜
+search 搜索
