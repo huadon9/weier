@@ -73,6 +73,19 @@ body{
 .we-pull-right{
     float: right;
 }
+.we-back{
+    position: relative;
+    &::after{
+        content: '';
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 11px;
+        left: 6px;
+        background-image: url(../../assets/images/back.png);
+        background-size: 22px 22px;
+    }
+}
 .we-tabbar{
     position: fixed;
     width: 100%;

@@ -3,16 +3,16 @@ $(document).ready(function () {
     swiperWidth = $('.swiper-container').width();
     var swiper = new Swiper('.swiper-container',{
         loop: false,
-        // autoplay: true
+        autoplay: true,
         initialSlide: 1,
-        on: {
-            init: function () {
-                swiperConfig();
-            },
-            slideChangeTransitionEnd: function(){
-                swiperConfig();
-            },
-        },
+        // on: {
+        //     init: function () {
+        //         swiperConfig();
+        //     },
+        //     slideChangeTransitionEnd: function(){
+        //         swiperConfig();
+        //     },
+        // },
     
     });
 })
