@@ -20,12 +20,16 @@ gulp.task('staticCopy', () =>
         copyfile('./pages/**/*.js', '../src/pages/');
 		copyfile('./pages/**/*.html', '../src/pages/');
 		copyfile('./assets/css/swiper.min.css', '../src/assets/css/');
+		copyfile('./assets/css/dropload.css', '../src/assets/css/');
+		copyfile('./assets/js/swiper.min.js', '../src/assets/js/');
+		copyfile('./assets/js/dropload.min.js', '../src/assets/js/');
+
 	}
 );
 
 //合并公共js文件
 gulp.task('concatJS', () =>
-    gulp.src('./assets/js/*.js')
+    gulp.src(['./assets/js/jquery.min.js', './assets/js/we.js'])
     .pipe(concat('lib.min.js'))
     .pipe(gulp.dest('../src/assets/js/'))
 );

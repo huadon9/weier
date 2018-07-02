@@ -2,9 +2,10 @@
 
 .home-content{
     background-color: #fff;
+    margin-bottom: 50px;
 }
 .home-top{
-    padding: 4px 0;
+    padding: 8px 0;
     display: flex;
     flex-direction: row;
     .home-search{
@@ -17,31 +18,35 @@
             padding: 7px 0 10px 10px;
         }
         img{
-            width: 18px;
+            width: 24px;
         }
     }
 }
-
-.swiper-container {
-    width: 100%;
-    height: 134px;
-  }
-  .swiper-slide {
+.swiper-container{
+	width:100%;	
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;
+}
+.swiper-slide{
+    width:90%;
+    height: 155px;
+    line-height: 155px;
     text-align: center;
-    font-size: 18px;
-    background: rgb(187, 134, 134);
+    background-color: #f5b55c;
+    border-radius: 5px;
+    overflow: hidden;
+	-webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.swiper-slide-active{
+    width: calc(90% - 20px);
+    margin: 0 10px;
+}
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+
+
+

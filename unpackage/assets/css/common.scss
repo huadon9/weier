@@ -19,7 +19,7 @@ $fontColor: #323232;
 $lightFontColor: #666;
 $moreLightColor: #999;
 $backgroundColor: #f2f2f2;
-
+$borderColor: #bfbfbf;
 @mixin lineClamp($line: 2) {
     word-break: break-all;
     white-space: pre-wrap;
@@ -152,22 +152,22 @@ body{
 }
 .we-search{
     width: 100%;
-    height: 34px;
-    padding: 0 12px;
+    height: 36px;
+    padding: 0 12px 0 9%;
     background-color: #fff;
     .we-bar{
         border: 1px solid $moreLightColor;
-        border-radius: 17px;
+        border-radius: 18px;
         display: flex;
         flex-direction: row;
-        padding-right: 17px;
+        padding-right: 18px;
         .s-logo{
             display: inline-block;
-            width: 17px;
-            height: 17px;
-            background-size: 17px 17px;
+            width: 18px;
+            height: 18px;
+            background-size: 18px 18px;
             background-image: url(../../assets/images/liteLogo.png);
-            margin: 7px 4px 0 12px;
+            margin: 8px 4px 0 12px;
         }
         .s-icon{
             display: block;
@@ -176,7 +176,7 @@ body{
             background-size: 14px 14px;
             background-image: url(../../assets/images/search.png);
             position: absolute;
-            top: 8px;
+            top: 9px;
             left: 50px;
         }
         .s-dece{
@@ -187,9 +187,9 @@ body{
                 content:'';
                 display: inline-block;
                 width: 1px;
-                height: 17px;
+                height: 18px;
                 background-color: $moreLightColor;
-                margin-top: 7px;
+                margin-top: 8px;
             }
         }
         .s-input{
@@ -198,12 +198,12 @@ body{
             font-size: 14px;
             text-indent: 23px;
             &::-webkit-input-placeholder{
-                line-height: normal;
+                
             }
         }
         .s-clear{
             width: 40px;
-            height: 34px;
+            height: 36px;
             position: absolute;
             top: 0;
             right: 4px;
@@ -214,9 +214,9 @@ body{
             &:after{
                 content: '';
                 display: block;
-                width: 17px;
-                height: 17px;
-                background-size: 17px 17px;
+                width: 18px;
+                height: 18px;
+                background-size: 18px 18px;
                 background-image: url(../../assets/images/clear.png);
                 margin: 8px 0 0 11px;
             }
@@ -236,7 +236,7 @@ body{
                 margin: -1px -1px 0 0;
                 text-align: center;                    
                 color: #fff;
-                border-radius: 0 17px 17px 0;
+                border-radius: 0 18px 18px 0;
             }
             .s-clear{
                 right: 60px;
@@ -265,7 +265,7 @@ body{
             bottom: 0;
             left: 10px;
             right: 10px;
-            background-color: $moreLightColor;
+            background-color: $borderColor;
         }
         .l{
             width: 123px;
@@ -274,6 +274,7 @@ body{
                 height: 103px;
                 overflow: hidden;
                 margin: 10px;
+                border: 1px solid $borderColor;
                 img{
                     width: 100%;
                 }
@@ -306,6 +307,9 @@ body{
                 .commission{
                     font-size: 13px;
                     color: $themeColor;
+                    .deco{
+                        font-weight: 800;
+                    }
                 }
             }
         }
@@ -313,12 +317,58 @@ body{
 }
 .all-product{
     text-align: center;
-    margin: 10px 0 15px 0;
+    margin: 15px 0 15px 0;
 }
 .pure-btn{
     font-size: 14px;
-    border: 1px solid $moreLightColor;
+    border: 1px solid #9b9b9b;
     color: $fontColor;
     background-color: transparent;
     padding: 4px 10px;
+}
+.pull-load{
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    color: $lightFontColor;
+}
+.pull-up-notdata{
+    display: none;
+}
+.pull-up-loading{
+    display: none;
+    .loadgif{
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        margin: 6px;
+        border: 2px solid #666;
+        border-bottom-color: transparent;
+        vertical-align: middle;
+        -webkit-animation: rotate 0.75s linear infinite;
+        animation: rotate 0.75s linear infinite;
+    }
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
