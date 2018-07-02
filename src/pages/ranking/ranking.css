@@ -159,12 +159,12 @@ body {
 
 .we-search {
   width: 100%;
-  height: 34px;
+  height: 36px;
   padding: 0 12px;
   background-color: #fff; }
   .we-search .we-bar {
     border: 1px solid #999;
-    border-radius: 17px;
+    border-radius: 18px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,14 +172,14 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding-right: 17px; }
+    padding-right: 18px; }
     .we-search .we-bar .s-logo {
       display: inline-block;
-      width: 17px;
-      height: 17px;
-      background-size: 17px 17px;
+      width: 18px;
+      height: 18px;
+      background-size: 18px 18px;
       background-image: url(../../assets/images/liteLogo.png);
-      margin: 7px 4px 0 12px; }
+      margin: 8px 4px 0 12px; }
     .we-search .we-bar .s-icon {
       display: block;
       width: 14px;
@@ -187,7 +187,7 @@ body {
       background-size: 14px 14px;
       background-image: url(../../assets/images/search.png);
       position: absolute;
-      top: 8px;
+      top: 9px;
       left: 50px; }
     .we-search .we-bar .s-dece {
       width: 6px;
@@ -197,9 +197,9 @@ body {
         content: '';
         display: inline-block;
         width: 1px;
-        height: 17px;
+        height: 18px;
         background-color: #999;
-        margin-top: 7px; }
+        margin-top: 8px; }
     .we-search .we-bar .s-input {
       -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -207,11 +207,9 @@ body {
       border: 0;
       font-size: 14px;
       text-indent: 23px; }
-      .we-search .we-bar .s-input::-webkit-input-placeholder {
-        line-height: normal; }
     .we-search .we-bar .s-clear {
       width: 40px;
-      height: 34px;
+      height: 36px;
       position: absolute;
       top: 0;
       right: 4px;
@@ -221,9 +219,9 @@ body {
       .we-search .we-bar .s-clear:after {
         content: '';
         display: block;
-        width: 17px;
-        height: 17px;
-        background-size: 17px 17px;
+        width: 18px;
+        height: 18px;
+        background-size: 18px 18px;
         background-image: url(../../assets/images/clear.png);
         margin: 8px 0 0 11px; }
     .we-search .we-bar .s-button {
@@ -238,7 +236,7 @@ body {
       margin: -1px -1px 0 0;
       text-align: center;
       color: #fff;
-      border-radius: 0 17px 17px 0; }
+      border-radius: 0 18px 18px 0; }
     .we-search.s-label .we-bar .s-clear {
       right: 60px; }
 
@@ -304,7 +302,7 @@ body {
 
 .all-product {
   text-align: center;
-  margin: 10px 0 15px 0; }
+  margin: 15px 0 15px 0; }
 
 .pure-btn {
   font-size: 14px;
@@ -312,6 +310,48 @@ body {
   color: #323232;
   background-color: transparent;
   padding: 4px 10px; }
+
+.pull-load {
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  color: #666; }
+
+.pull-up-notdata {
+  display: none; }
+
+.pull-up-loading {
+  display: none; }
+  .pull-up-loading .loadgif {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin: 6px;
+    border: 2px solid #666;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+    -webkit-animation: rotate 0.75s linear infinite;
+    animation: rotate 0.75s linear infinite; }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
 html, body {
   width: 100%;
