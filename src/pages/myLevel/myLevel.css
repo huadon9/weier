@@ -231,8 +231,8 @@ body {
     .we-search.s-label .we-bar .s-button {
       display: inline-block;
       width: 60px;
-      line-height: 34px;
-      height: 34px;
+      line-height: 36px;
+      height: 36px;
       margin: -1px -1px 0 0;
       text-align: center;
       color: #fff;
@@ -367,6 +367,7 @@ body {
   .top-box .header-img {
     width: 61px;
     height: 61px;
+    border: 1px solid #fff;
     border-radius: 100%;
     overflow: hidden;
     margin: 12px auto; }
@@ -374,6 +375,7 @@ body {
       width: 100%; }
   .top-box .name {
     font-size: 15px;
+    font-weight: 800;
     color: #323232;
     text-align: center; }
   .top-box .about-money {
@@ -430,7 +432,7 @@ body {
     height: 96px;
     width: 100%;
     padding: 15px 0;
-    border-bottom: 0.5px solid #999; }
+    border-bottom: 0.5px solid #bfbfbf; }
     .store-list .store-item:nth-last-child(1) {
       border: none; }
     .store-list .store-item .img {
@@ -452,6 +454,7 @@ body {
       .store-list .store-item .info-text .s-money {
         color: #323232; }
         .store-list .store-item .info-text .s-money span {
+          font-weight: 800;
           color: #EC5151; }
     .store-list .store-item .s-level {
       width: 55px; }

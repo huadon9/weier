@@ -232,8 +232,8 @@ body {
     .we-search.s-label .we-bar .s-button {
       display: inline-block;
       width: 60px;
-      line-height: 34px;
-      height: 34px;
+      line-height: 36px;
+      height: 36px;
       margin: -1px -1px 0 0;
       text-align: center;
       color: #fff;
@@ -380,6 +380,7 @@ body {
     .user .header-img .img {
       width: 61px;
       height: 61px;
+      border: 1px solid #fff;
       border-radius: 50%;
       overflow: hidden;
       margin: 12px 0 0 20px; }
@@ -472,14 +473,24 @@ body {
     .add-handle button.added {
       background-color: #BDBDBD; }
 
-.cd-list .list-item {
-  padding: 10px 13px;
-  border-bottom: 6px solid #f2f2f2; }
-  .cd-list .list-item .money {
-    font-size: 18px;
-    color: #323232;
-    text-align: center; }
-  .cd-list .list-item .info {
-    line-height: 20px;
-    color: #666;
-    overflow: hidden; }
+.cd-list {
+  background-color: #f2f2f2; }
+  .cd-list .list-item {
+    padding: 10px 13px;
+    margin-bottom: 5px;
+    border-bottom: 0.5px solid #bfbfbf;
+    background-color: #fff; }
+    .cd-list .list-item:nth-last-child(1) {
+      margin-bottom: 0;
+      border: none; }
+    .cd-list .list-item .money {
+      font-size: 18px;
+      font-weight: 800;
+      color: #323232;
+      text-align: center; }
+    .cd-list .list-item .info {
+      line-height: 24px;
+      color: #666;
+      overflow: hidden; }
+      .cd-list .list-item .info .we-pull-right {
+        color: #999; }

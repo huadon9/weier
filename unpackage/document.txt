@@ -27,3 +27,4 @@ myLevel 我的等级
 personal 个人中心
 ranking 排行榜
 search 搜索
+myTeam 我的团队
