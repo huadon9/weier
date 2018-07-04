@@ -1,0 +1,86 @@
+@import '../../assets/css/common.scss';
+
+.home-content{
+    background-color: #fff;
+    overflow: hidden;
+    padding-top: 44px;
+    margin-bottom: 50px;
+}
+
+.user{ 
+    height: 124px;
+    background-color: $themeColor;
+    position: relative;
+    overflow: hidden;
+    .date-show{
+        position: absolute;
+        top: 10px;
+        left: 13px;
+        color: #fff;
+        z-index: 99;
+        .year{
+            font-size: 10px;
+        }
+        .month{
+            font-size: 20px;
+            .tri{
+                font-size: 12px;
+            }
+            .deco{
+                font-size: 12px;
+                padding: 0 10px 0 4px;
+            }
+        }
+    }
+    .monthSelect{
+        width: 72px;
+        height: 45px;
+        position: absolute;
+        z-index: 102;
+        top: 10px;
+        left: 13px;
+        opacity: 0;
+    }
+    .u-title{
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        margin: 20px 0 6px 0;
+    }
+    .money{
+        text-align: center;
+        color: #fff;
+        font-size: 34px;
+        font-weight: 800;
+    }
+}
+
+.cd-list{
+    background-color: $backgroundColor;
+    padding: 0 13px;
+    overflow: hidden;
+    .list-item{
+        padding: 10px 13px;
+        margin-top: 5px;
+        border: 0.5px solid $borderColor;
+        border-radius: 4px;
+        background-color: #fff;
+        &:nth-last-child(1){
+            margin-bottom: 0;
+        }
+        .info{
+            line-height: 24px;
+            color: $moreLightColor;
+            overflow: hidden;
+            .we-pull-right{
+                color: $fontColor;
+                &.bonusing{
+                    color: $themeColor;
+                }
+                &.bonused{
+                    color: $lightFontColor;
+                }
+            }
+        }
+    }
+}

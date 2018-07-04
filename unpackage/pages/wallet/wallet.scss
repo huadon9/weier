@@ -1,0 +1,48 @@
+@import '../../assets/css/common.scss';
+body{
+    background-color: #fff;
+}
+.home-content{    
+    overflow: hidden;
+    padding-top: 44px;
+    margin-bottom: 50px;
+}
+
+.user{ 
+    height: 133px;
+    background-image: url(../../assets/images/wallet_bg.png);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+    .u-title{
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        margin: 20px 0 6px 0;
+    }
+    .money{
+        text-align: center;
+        color: #fff;
+        font-size: 34px;
+        font-weight: 800;
+    }
+}
+
+.cd-list{
+    padding: 0 13px;
+    overflow: hidden;
+    .list-item{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+        border-bottom: 0.5px solid $borderColor;
+      
+        img{
+            width: 23px;
+            margin: -3px 10px 0 0;
+        }
+        font-size: 15px;
+        color: $fontColor;
+    }
+}

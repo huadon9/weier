@@ -28,3 +28,5 @@ personal 个人中心
 ranking 排行榜
 search 搜索
 myTeam 我的团队
+bonusBill 提现记录
+wallet 我的钱包
