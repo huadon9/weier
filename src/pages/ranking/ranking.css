@@ -527,3 +527,10 @@ html, body {
             color: #999; }
             .we-content .rank-list .rl-content .rl-item .name-money .money span {
               color: #7B9CBD; }
+
+.my-store {
+  position: fixed;
+  right: 20px;
+  bottom: 50px; }
+  .my-store img {
+    width: 50px; }
