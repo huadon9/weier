@@ -30,3 +30,5 @@ search 搜索
 myTeam 我的团队
 bonusBill 提现记录
 wallet 我的钱包
+balance 余额明细
+balanceOut 余额提现
