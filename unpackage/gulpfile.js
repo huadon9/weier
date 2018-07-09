@@ -21,9 +21,11 @@ gulp.task('staticCopy', () =>
 		copyfile('./pages/**/*.html', '../src/pages/');
 		copyfile('./assets/css/swiper.min.css', '../src/assets/css/');
 		copyfile('./assets/css/dropload.css', '../src/assets/css/');
+		copyfile('./assets/css/jquery-weui.min.css', '../src/assets/css/');
 		copyfile('./assets/js/swiper.min.js', '../src/assets/js/');
 		copyfile('./assets/js/dropload.min.js', '../src/assets/js/');
-
+		copyfile('./assets/js/city-picker.min.js', '../src/assets/js/');
+		copyfile('./assets/js/jquery-weui.min.js', '../src/assets/js/');
 	}
 );
 

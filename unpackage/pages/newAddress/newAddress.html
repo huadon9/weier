@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="hasInputPage">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加新地址</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+<link rel="stylesheet" href="newAddress.css">
+<link rel="stylesheet" href="../../assets/css/jquery-weui.min.css">
+<body>
+    <div class="we-header">
+        <div class="we-bar">
+            <div class="title"></div>
+            <div class="we-pull-left we-back"></div>
+        </div>
+    </div>
+    <div class="home-content">
+     
+        <div class="b-content">
+            <div class="input-list">
+                <div class="l title">
+                    收货人
+                </div>
+                <div class="r">
+                    <input type="text" placeholder="请输入收货人姓名">
+                </div>
+            </div>
+            <div class="input-list">
+                <div class="l title">
+                    联系电话
+                </div>
+                <div class="r">
+                    <input type="text" placeholder="请输入联系电话">
+                </div>
+            </div>
+            <div class="input-list">
+                <div class="l title">
+                    所在地区
+                </div>
+                <div class="r">
+                    <input type="text" id="city-picker" readonly="readonly" placeholder="请选择>">
+                </div>
+            </div>
+            <div class="input-list textarea">
+                <div class="l title">
+                    详细地址
+                </div>
+                <div class="r">
+                    <textarea col="2"></textarea>
+                </div>
+            </div>
+            <div class="set-default">
+                <div class="handle we-pull-left">
+                    
+                </div>设为默认地址
+            </div>
+            <div class="commit theme-btn">
+                保存
+            </div>
+        </div>
+
+    </div>
+    <script src="../../assets/js/lib.min.js"></script>
+    <script src="../../assets/js/city-picker.min.js"></script>
+    <script src="../../assets/js/jquery-weui.min.js"></script>
+    <script src="newAddress.js"></script>
+</body>
+
+</html>

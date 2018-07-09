@@ -1,0 +1,107 @@
+@import '../../assets/css/common.scss';
+
+body{
+    background-color: #fff;
+}
+.home-content{    
+    overflow: hidden;
+    padding-top: 44px;
+   
+    .b-content{
+      
+        .title{
+            font-size: 14px;
+            color: $fontColor;
+        }
+   
+        .input-list{
+            width: 100%;
+            height: 55px;
+            padding: 0 13px;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 0.5px solid $borderColor;
+            position: relative;
+            &.textarea{
+                height: auto;
+                .r{
+                    textarea{
+                        border: none;
+                        width: 100%;
+                        height: 60px;
+                        padding: 18px 0 0 5px;
+                    }
+                }
+            }
+            .l{
+                width: 60px;
+                line-height: 55px;
+            }
+            .r{
+                flex: 1;
+                text-align: right;
+                line-height: 55px;
+                input, select{
+                    width: 100%;
+                    background-color: transparent;
+                    color: #999;
+                    padding: 10px 0 13px 10px;
+                    border: none;
+                    text-align: right;
+                }
+                input{
+                    padding-right: 3px;
+                    &::-webkit-input-placeholder{
+                        color: #999;
+                    }
+                }
+            }
+            .getCode{
+                position: absolute;
+                top: 14px;
+                left: 60px;
+                padding: 4px 8px;
+                background-color: $themeColor;
+                color: #fff;
+                border-radius: 13px;
+                border: none;
+            }
+        }
+        .set-default{
+            padding: 0 13px;
+            overflow: hidden;
+            line-height: 30px;
+            color: $fontColor;
+            margin-top: 10px;
+            .handle{
+                width: 30px;
+                height: 30px;
+                &.active{
+                    &::after{
+                        background-image: url(../../assets/images/choiced.png);
+                    }   
+                }
+                &::after{
+                    display: block;
+                    content: '';
+                    width: 18px;
+                    height: 18px;
+                    background-image: url(../../assets/images/not_choice.png);
+                    background-size: 18px 18px;
+                    margin: 6px 0 0 6px;
+                }
+            }
+        }
+    }
+    .commit{
+        width: calc(100% - 26px);
+        line-height: 50px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 25px;
+        margin: 20px auto;
+    }
+}
+
+

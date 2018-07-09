@@ -32,3 +32,6 @@ bonusBill 提现记录
 wallet 我的钱包
 balance 余额明细
 balanceOut 余额提现
+manAddress 地址管理
+newAddress 添加新地址
+myOrder 我的订单

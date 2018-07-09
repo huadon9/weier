@@ -1,0 +1,111 @@
+@import '../../assets/css/common.scss';
+
+.home-content{
+    overflow: hidden;
+    padding-top: 44px;
+    margin-bottom: 50px;
+}
+
+.sub-select{
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.5px solid $borderColor;
+    background-color: #fff;
+    div{
+        flex: 1;
+        color: $fontColor;
+        text-align: center;
+        line-height: 42px;
+        position: relative;
+        &.active{
+            color: $themeColor;
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                height: 1px;
+                bottom: 0;
+                left: 15px;
+                right: 15px;
+                background-color: $themeColor;
+            }
+        }
+    }
+}
+
+.me-list .list-item:after{
+    left: 0;
+    right: 0;
+}
+
+.me-list{
+    .store{
+        padding-left: 13px;
+        color: $fontColor;
+        background-color: #fff;
+        line-height: 40px;
+        a{
+            color: inherit;
+        }
+        img{
+            
+        }
+        .s-icon{
+            width: 15px;
+            margin-top: -3px;
+        }
+        .a-icon{
+            width: 20px;
+            margin-top: -2px;
+        }
+    }
+    .list-item{
+        background-color: #fff;
+        .l{
+            .img{
+                width: 91px;
+                height: 91px;
+                margin: 15px;
+            }
+        }
+        .r{
+            .count-price{
+                text-align: right;
+                font-size: 18px;
+                color: $fontColor;
+                line-height: 35px;
+                .text{
+                    font-size: 14px;
+                    color: $lightFontColor;
+                }
+                .deco{
+                    font-size: 12px;
+                    color: $lightFontColor;
+                }
+            }
+        }
+    }
+    .handle{
+        text-align: right;
+        padding: 10px 13px; 
+        background-color: #fff;
+        margin-bottom: 5px;  
+        border-top: 0.5px solid $borderColor;
+        button{
+            width: 74px;
+            height: 26px;
+            border-radius: 13px;
+            background-color: #fff;                                             
+            &.gray-btn{
+                color: $lightFontColor;
+                border: 1px solid $lightFontColor;
+            }
+            &.active-btn{
+                color: $themeColor;
+                border: 1px solid $themeColor;
+                margin-left: 15px;
+            }
+        }
+    }
+}

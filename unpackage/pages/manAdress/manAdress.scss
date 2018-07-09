@@ -1,0 +1,85 @@
+@import '../../assets/css/common.scss';
+
+.home-content{    
+    overflow: hidden;
+    margin: 44px 0 60px 0;
+    .address-list{
+        padding: 0 13px;
+        background-color: #fff;
+        overflow: hidden;
+        margin-bottom: 5px;
+        .name-tel{
+            font-size: 16px;
+            font-weight: 800;
+            color: $fontColor;
+            overflow: hidden;
+            line-height: 34px;
+        }
+        .site{
+            color: $fontColor;
+            line-height: 36px;
+            border-bottom: 0.5px solid $borderColor;
+        }
+        .handle{
+            line-height: 40px;
+            .set-default{
+                display: inline-block;
+                vertical-align: top;
+                width: 30px;
+                height: 40px;
+                &.active{
+                    &::after{
+                        background-image: url(../../assets/images/choiced.png);
+                    }   
+                }
+                &::after{
+                    display: block;
+                    content: '';
+                    width: 18px;
+                    height: 18px;
+                    background-image: url(../../assets/images/not_choice.png);
+                    background-size: 18px 18px;
+                    margin: 10px 0 0 6px;
+                }
+            }
+            .edit{
+                display: inline-block;
+                width: 30px;
+                height: 40px;
+                img{
+                    width: 20px;
+                    margin:-3px 0 0 6px;
+                }
+            }
+            .dele{
+                display: inline-block;
+                width: 30px;
+                height: 40px;
+                img{
+                    width: 20px;
+                    margin: -3px 0 0 6px;
+                } 
+            }
+        }
+    }
+    .footer{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 999;
+        padding: 10px 13px;
+        background-color: #fff;
+        .commit{
+            width: 100%;
+            line-height: 50px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 25px;
+            
+        }
+    }    
+}
+
+
