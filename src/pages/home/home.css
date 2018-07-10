@@ -374,12 +374,25 @@ body {
     -ms-flex: 1;
     flex: 1; }
   .home-top .home-message {
-    width: 55px; }
+    width: 55px;
+    position: relative; }
     .home-top .home-message a {
       display: block;
       padding: 7px 0 10px 0px; }
     .home-top .home-message img {
       width: 24px; }
+    .home-top .home-message .number {
+      position: absolute;
+      font-size: 10px;
+      background-color: #EC5151;
+      color: #fff;
+      top: -4px;
+      left: 18px;
+      line-height: 18px;
+      text-align: center;
+      min-width: 18px;
+      border-radius: 9px;
+      padding: 0 2px; }
 
 .swiper-container {
   width: 100%;
