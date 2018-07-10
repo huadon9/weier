@@ -1,5 +1,10 @@
 @import '../../assets/css/common.scss';
-
+.we-search{
+    padding: 0 13px;
+}
+.we-search .we-bar{
+    border: 1px solid #b0b0b0;
+}
 .home-content{
     background-color: #fff;
     overflow: hidden;
@@ -55,6 +60,7 @@
         height: 20px;
         border: none;
         border-radius: 10px;
+        font-size: 10px;
         background-color: $themeColor;
         color: #fff;
         &.added{

@@ -63,13 +63,15 @@
     .list-item{
         background-color: #fff;
         .l{
+            width: 121px;
             .img{
                 width: 91px;
                 height: 91px;
-                margin: 15px;
+                margin: 14px;
             }
         }
         .r{
+            padding: 0 13px 0 0;
             .count-price{
                 text-align: right;
                 font-size: 18px;
@@ -91,7 +93,7 @@
         padding: 10px 13px; 
         background-color: #fff;
         margin-bottom: 5px;  
-        border-top: 0.5px solid $borderColor;
+        border-top: 0.5px solid $lightBorderColor;
         button{
             width: 74px;
             height: 26px;

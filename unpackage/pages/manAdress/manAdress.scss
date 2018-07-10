@@ -10,7 +10,7 @@
         margin-bottom: 5px;
         .name-tel{
             font-size: 16px;
-            font-weight: 800;
+            font-weight: 600;
             color: $fontColor;
             overflow: hidden;
             line-height: 34px;
@@ -27,6 +27,7 @@
                 vertical-align: top;
                 width: 30px;
                 height: 40px;
+                margin-left: -10px;
                 &.active{
                     &::after{
                         background-image: url(../../assets/images/choiced.png);

@@ -357,6 +357,12 @@ body {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+.we-search {
+  padding: 0 13px; }
+
+.we-search .we-bar {
+  border: 1px solid #b0b0b0; }
+
 .home-content {
   background-color: #fff;
   overflow: hidden; }
@@ -410,6 +416,7 @@ body {
     height: 20px;
     border: none;
     border-radius: 10px;
+    font-size: 10px;
     background-color: #EC5151;
     color: #fff; }
     .add-handle button.added {

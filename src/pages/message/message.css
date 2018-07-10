@@ -358,7 +358,7 @@ body {
 
 .message-list {
   background-color: #fff;
-  padding: 0 15px; }
+  padding: 0 13px; }
   .message-list .list-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -402,6 +402,6 @@ body {
         color: #999;
         margin-top: 7px; }
     .message-list .list-item .r {
-      width: 60px;
+      width: 70px;
       color: #999;
       line-height: 71px; }

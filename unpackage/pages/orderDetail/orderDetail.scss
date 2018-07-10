@@ -18,7 +18,8 @@
         text-align: right;
         img{
             width: 14px;
-            margin-top: -3px;
+            float: left;
+            margin: 3px 0 0 2px;
         }
     }
     P{
@@ -121,10 +122,10 @@
     text-align: right;
     line-height: 50px;
     button{
-        width: 72px;
-        height: 24px;
+        width: 74px;
+        height: 26px;
         margin-right: 12px;
-        border-radius: 12px;
+        border-radius: 13px;
         &.default-btn{
             background-color: #fff;
             border: 1px solid $borderColor;

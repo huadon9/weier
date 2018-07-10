@@ -373,7 +373,8 @@ body {
     text-align: right; }
     .top-title .sub-title img {
       width: 14px;
-      margin-top: -3px; }
+      float: left;
+      margin: 3px 0 0 2px; }
   .top-title P {
     margin-bottom: 8px;
     padding: 0 13px; }
@@ -456,10 +457,10 @@ body {
   text-align: right;
   line-height: 50px; }
   .footer button {
-    width: 72px;
-    height: 24px;
+    width: 74px;
+    height: 26px;
     margin-right: 12px;
-    border-radius: 12px; }
+    border-radius: 13px; }
     .footer button.default-btn {
       background-color: #fff;
       border: 1px solid #bfbfbf;

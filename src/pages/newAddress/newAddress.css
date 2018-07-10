@@ -364,7 +364,8 @@ body {
   padding-top: 44px; }
   .home-content .b-content .title {
     font-size: 14px;
-    color: #323232; }
+    color: #323232;
+    font-weight: 800; }
   .home-content .b-content .input-list {
     width: 100%;
     height: 55px;
@@ -384,7 +385,10 @@ body {
         border: none;
         width: 100%;
         height: 60px;
-        padding: 18px 0 0 5px; }
+        padding: 18px 0 0 5px;
+        color: #666; }
+        .home-content .b-content .input-list.textarea .r textarea::-webkit-input-placeholder {
+          color: #999; }
     .home-content .b-content .input-list .l {
       width: 60px;
       line-height: 55px; }
@@ -397,12 +401,12 @@ body {
       .home-content .b-content .input-list .r input, .home-content .b-content .input-list .r select {
         width: 100%;
         background-color: transparent;
-        color: #999;
         padding: 10px 0 13px 10px;
         border: none;
         text-align: right; }
       .home-content .b-content .input-list .r input {
-        padding-right: 3px; }
+        padding-right: 3px;
+        color: #666; }
         .home-content .b-content .input-list .r input::-webkit-input-placeholder {
           color: #999; }
     .home-content .b-content .input-list .getCode {
@@ -422,7 +426,8 @@ body {
     margin-top: 10px; }
     .home-content .b-content .set-default .handle {
       width: 30px;
-      height: 30px; }
+      height: 30px;
+      margin-left: -8px; }
       .home-content .b-content .set-default .handle.active::after {
         background-image: url(../../assets/images/choiced.png); }
       .home-content .b-content .set-default .handle::after {

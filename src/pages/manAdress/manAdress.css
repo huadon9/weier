@@ -366,7 +366,7 @@ body {
     margin-bottom: 5px; }
     .home-content .address-list .name-tel {
       font-size: 16px;
-      font-weight: 800;
+      font-weight: 600;
       color: #323232;
       overflow: hidden;
       line-height: 34px; }
@@ -380,7 +380,8 @@ body {
         display: inline-block;
         vertical-align: top;
         width: 30px;
-        height: 40px; }
+        height: 40px;
+        margin-left: -10px; }
         .home-content .address-list .handle .set-default.active::after {
           background-image: url(../../assets/images/choiced.png); }
         .home-content .address-list .handle .set-default::after {

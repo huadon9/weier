@@ -412,28 +412,32 @@ body {
 
 .me-list .list-item {
   background-color: #fff; }
-  .me-list .list-item .l .img {
-    width: 91px;
-    height: 91px;
-    margin: 15px; }
-  .me-list .list-item .r .count-price {
-    text-align: right;
-    font-size: 18px;
-    color: #323232;
-    line-height: 35px; }
-    .me-list .list-item .r .count-price .text {
-      font-size: 14px;
-      color: #666; }
-    .me-list .list-item .r .count-price .deco {
-      font-size: 12px;
-      color: #666; }
+  .me-list .list-item .l {
+    width: 121px; }
+    .me-list .list-item .l .img {
+      width: 91px;
+      height: 91px;
+      margin: 14px; }
+  .me-list .list-item .r {
+    padding: 0 13px 0 0; }
+    .me-list .list-item .r .count-price {
+      text-align: right;
+      font-size: 18px;
+      color: #323232;
+      line-height: 35px; }
+      .me-list .list-item .r .count-price .text {
+        font-size: 14px;
+        color: #666; }
+      .me-list .list-item .r .count-price .deco {
+        font-size: 12px;
+        color: #666; }
 
 .me-list .handle {
   text-align: right;
   padding: 10px 13px;
   background-color: #fff;
   margin-bottom: 5px;
-  border-top: 0.5px solid #bfbfbf; }
+  border-top: 0.5px solid rgba(191, 191, 191, 0.4); }
   .me-list .handle button {
     width: 74px;
     height: 26px;

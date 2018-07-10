@@ -412,11 +412,11 @@ body {
         -ms-flex: 1;
         flex: 1;
         text-align: center;
-        line-height: 65px; }
+        line-height: 78px; }
         .home-content .top .sub-item .item span {
           border: 1px solid #EC5151;
           border-radius: 14px;
-          padding: 4px 20px;
+          padding: 3px 24px;
           color: #EC5151; }
           .home-content .top .sub-item .item span.active {
             background-color: #EC5151;
@@ -437,3 +437,5 @@ body {
     .b-content .b-item .text {
       font-size: 10px;
       color: #999; }
+    .b-content .b-item .we-pull-right {
+      text-align: right; }

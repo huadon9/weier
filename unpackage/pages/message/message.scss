@@ -2,7 +2,7 @@
 
 .message-list {
     background-color: #fff;
-    padding: 0 15px;
+    padding: 0 13px;
     .list-item{
         display: flex;
         flex-direction: row;
@@ -40,7 +40,7 @@
             }
         }
         .r{
-            width: 60px;
+            width: 70px;
             color: $moreLightColor;
             line-height: 71px;
         }

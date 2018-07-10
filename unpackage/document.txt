@@ -35,3 +35,4 @@ balanceOut 余额提现
 manAddress 地址管理
 newAddress 添加新地址
 myOrder 我的订单
+orderDetail 订单详情
