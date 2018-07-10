@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>订单详情</title>
+    <title>确认订单</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 </head>
-<link rel="stylesheet" href="orderDetail.css">
+<link rel="stylesheet" href="orderConfirm.css">
 
 <body>
     <div class="we-header">
@@ -47,40 +47,45 @@
                     <div class="price">￥115</div>
                 </div>
             </a>
-            <p class="info">
-                <span class="we-pull-left">订单编号</span>
-                <span class="we-pull-right">2324324234234</span>
-            </p>
-            <p class="info">
-                <span class="we-pull-left">支付方式</span>
-                <span class="we-pull-right">微信支付</span>
-            </p>
-            <p class="info">
-                <span class="we-pull-left">下单时间</span>
-                <span class="we-pull-right">2018-08-23 12:49</span>
-            </p>
-            <p class="info">
-                <span class="we-pull-left">商品总价</span>
-                <span class="we-pull-right">￥ 134</span>
-            </p>
-            <p class="info">
-                <span class="we-pull-left">运费</span>
-                <span class="we-pull-right">￥ 34</span>
-            </p>
-            <p class="total-info">
-                <span class="we-pull-left">订单总价</span>
-                <span class="we-pull-right">￥ 34</span>                
-            </p>
+            <div class="order-info">
+                <div class="o-item">
+                    <span class="we-pull-left">购买数量</span>
+                    <span class="we-pull-right">
+                        <span class="sub handle disable">-</span>
+                        <input type="number" class="goods-number" value="0">
+                        <span class="add handle">+</span>
+                    </span>
+                </div>
+                <div class="o-item">
+                    <span class="we-pull-left">优惠券</span>
+                    <span class="we-pull-right">暂无可用优惠券<img src="../../assets/images/right_arrow.png"></span>
+                </div>
+                <div class="o-item">
+                    <span class="we-pull-left">配送方式</span>
+                    <span class="we-pull-right">快递<img src="../../assets/images/right_arrow.png"></span>
+                </div>
+                <div class="o-item">
+                    <span class="we-pull-left">运费</span>
+                    <span class="we-pull-right">￥12</span>
+                </div>
+                <div class="o-item">
+                    <span class="we-pull-left">买家留言：</span>
+                    <span class="custom-text"><input type="text" placeholder="填写内容（选填）"></span>
+                </div>
+                <p class="total-info">
+                    共1件商品 小计 <span>￥</span><span class="number">243</span>
+                </p>
+            </div>
         </div>
         <div class="footer">
-            <button class="default-btn">返回首页</button> <button class="default-btn">退款/售后</button>
-            <button class="active-btn">分享</button>
+            <span class="we-pull-left">合计<span>￥</span><span class="number">243</span></span>
+            <button class="active-btn">支付</button>
         </div>
     </div>
 
 
     <script src="../../assets/js/lib.min.js"></script>
-    <script src="orderDetail.js"></script>
+    <script src="orderConfirm.js"></script>
 </body>
 
 </html>
