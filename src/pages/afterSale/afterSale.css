@@ -1,0 +1,72 @@
+.message-list {
+  background-color: #fff; }
+  .message-list .list-item {
+    padding: 0 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 83px;
+    border-bottom: 10px solid rgba(191, 191, 191, 0.2); }
+    .message-list .list-item .l {
+      width: 41px; }
+      .message-list .list-item .l .img {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 20px 0 0 0px; }
+        .message-list .list-item .l .img img {
+          width: 100%; }
+    .message-list .list-item .c {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .message-list .list-item .c .title {
+        font-size: 15px;
+        color: #000;
+        margin-top: 15px;
+        word-break: break-all;
+        white-space: pre-wrap;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .message-list .list-item .c .info {
+        color: #999;
+        margin-top: 7px; }
+  .message-list .user-handle {
+    padding: 10px 13px; }
+    .message-list .user-handle .user {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-bottom: 10px; }
+      .message-list .user-handle .user .img {
+        width: 39px;
+        height: 39px;
+        border: 1px solid #bfbfbf;
+        border-radius: 3px; }
+        .message-list .user-handle .user .img img {
+          width: 100%; }
+      .message-list .user-handle .user .handle-info {
+        padding-left: 10px; }
+        .message-list .user-handle .user .handle-info p:nth-child(1) {
+          font-size: 15px;
+          color: #000; }
+        .message-list .user-handle .user .handle-info p:nth-child(2) {
+          color: #999; }
+    .message-list .user-handle .after-info {
+      color: #999;
+      line-height: 24px; }
+    .message-list .user-handle .imgs .img {
+      width: 68px;
+      height: 68px;
+      margin: 0 6px 6px 0;
+      border: 1px solid #bfbfbf; }
+      .message-list .user-handle .imgs .img img {
+        width: 100%; }

@@ -20,6 +20,9 @@ body {
     flex-direction: row;
     border-bottom: 0.5px solid #bfbfbf;
     position: relative; }
+    .home-content .b-content .input-list.tel {
+      border-top: 0.5px solid #bfbfbf;
+      border-bottom: none; }
     .home-content .b-content .input-list.textarea {
       height: auto; }
       .home-content .b-content .input-list.textarea .r textarea {
@@ -59,3 +62,28 @@ body {
     color: #fff;
     border-radius: 25px;
     margin: 20px auto; }
+  .home-content .reason textarea {
+    border: none;
+    width: 100%;
+    height: 138px;
+    padding: 10px 13px;
+    color: #666;
+    font-size: 15px;
+    color: #323232; }
+    .home-content .reason textarea::-webkit-input-placeholder {
+      color: #999; }
+  .home-content .upload {
+    padding: 0 13px;
+    border-top: 10px solid rgba(191, 191, 191, 0.2); }
+    .home-content .upload p {
+      font-size: 15px;
+      color: #323232;
+      line-height: 50px; }
+      .home-content .upload p span {
+        color: #999; }
+    .home-content .upload .img {
+      width: 94px;
+      height: 94px;
+      margin: 0 10px 10px 0; }
+      .home-content .upload .img img {
+        width: 100%; }

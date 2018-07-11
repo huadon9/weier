@@ -38,3 +38,5 @@ myOrder 我的订单
 orderDetail 订单详情
 orderConfirm 确认订单
 commit 评价提交
+applyRefund 申请退款
+afterSale 售后详情

@@ -1,0 +1,81 @@
+@import '../../assets/css/const.scss';
+
+.message-list {
+    background-color: #fff;    
+    .list-item{
+        padding: 0 13px;
+        display: flex;
+        flex-direction: row;
+        height: 83px;
+        border-bottom: 10px solid rgba($borderColor, 0.2);
+        .l{
+            width: 41px;
+            .img{
+                width: 31px;
+                height: 31px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 20px 0 0 0px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .c{
+            flex: 1;
+            .title{
+                font-size: 15px;
+                color: #000;
+                margin-top: 15px;
+                @include lineClamp(1);
+            }
+            .info{
+                color: $moreLightColor;
+                margin-top: 7px;
+            }
+        }
+    }
+    .user-handle{
+        padding: 10px 13px;
+        .user{
+            display: flex;
+            padding-bottom: 10px;
+            .img{
+                width: 39px;
+                height: 39px;
+                border: 1px solid $borderColor;
+                border-radius: 3px;
+                img{
+                    width: 100%;
+                }
+            }
+            .handle-info{
+                padding-left: 10px;
+                p{
+                    &:nth-child(1){
+                        font-size: 15px;
+                        color: #000;
+                    }
+                    &:nth-child(2){
+                        color: $moreLightColor;
+                    }
+                }
+            }
+        }
+        .after-info{
+            color: $moreLightColor;
+            line-height: 24px;
+        }
+        .imgs{
+            .img{
+                width: 68px;
+                height: 68px;
+                margin: 0 6px 6px 0;
+                border: 1px solid $borderColor;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
