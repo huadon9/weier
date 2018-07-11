@@ -1,0 +1,138 @@
+@import '../../assets/css/const.scss';
+body{
+    background-color: #fff;
+}
+.home-content{
+    overflow: hidden;
+    padding-top: 44px;
+}
+.top-title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .l{
+        width: 80px;
+        .img{
+            width: 62px;
+            height: 62px;
+            border: 1px solid $borderColor;
+            margin: 9px 0 0 17px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .r{
+        flex: 1;
+        padding: 9px 13px 0 13px;
+        font-size: 13px;
+        p{
+            line-height: 20px;
+        }
+        .font-color{
+            color: $fontColor;
+        }
+        .more-light{
+            color: $moreLightColor;
+        }
+        .green{
+            color: #24A567;
+        }
+        #ship-number{
+            color: $moreLightColor;
+            font-size: 13px;
+            border: none;
+            width: 120px;
+        }
+        a{
+            color: #7BC0FF;
+        }
+        button{
+            width: 40px;
+            height: 22px;
+            font-size: 12px;
+            color: $fontColor;
+            border: 1px solid $borderColor;
+            border-radius: 3px;
+            background-color: #fff;
+            padding: 0;
+            &:active{
+                background-color: #24A567;
+            }
+        }
+    }
+}
+
+.info{
+    width: 100%;
+    margin-top: 10px;
+    border-top: 5px solid rgba($moreLightColor, 0.1);
+    padding-top: 20px;
+    .item{
+        display: flex;
+        flex-direction: row;
+        .deco{
+            width: 60px;
+            overflow: hidden;
+            .circle{
+                width: 10px;
+                height: 10px;
+                border-radius: 5px;
+                background-color: rgba($moreLightColor, 0.2);
+                margin: 5px 0 0 25px;
+            }
+            .line{
+                width: 1px;
+                height: 100%;
+                background-color: rgba($moreLightColor, 0.2);
+                margin: 5px 0 0 29.5px;
+            }
+        }
+        .text{
+            flex: 1;
+            padding: 0px 13px 20px 0;
+            color: $moreLightColor;
+            .site{
+                font-size: 13px;                
+                line-height: 21px;
+                a{
+                    color: inherit;
+                }
+            }
+        }
+        &:nth-child(1){
+            .deco{
+                .circle{
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 8px;
+                    background-color: rgba(#24A567, 0.4);
+                    margin: 40% 0 0 22px;
+                    overflow: hidden;
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #24A567;
+                        border-radius: 5px;
+                        margin: 3px;
+                    }
+                }
+                .line{
+                    background-color: #24A567;
+                }
+            }
+            .text{
+                color: #24A567;
+            }
+        }
+        &:nth-last-child(1){
+            .deco{
+                .line{
+                    display: none;
+                }
+            }
+        }
+    }
+}

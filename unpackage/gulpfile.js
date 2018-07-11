@@ -26,6 +26,7 @@ gulp.task('staticCopy', () =>
 		copyfile('./assets/js/dropload.min.js', '../src/assets/js/');
 		copyfile('./assets/js/city-picker.min.js', '../src/assets/js/');
 		copyfile('./assets/js/jquery-weui.min.js', '../src/assets/js/');
+		copyfile('./assets/js/clipboard.min.js', '../src/assets/js/');
 	}
 );
 
