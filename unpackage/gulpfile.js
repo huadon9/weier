@@ -55,6 +55,24 @@ gulp.task('sass', function(done) {
 	.pipe(gulp.dest('../src/pages/'))
 	.on('end', done);
 });
+gulp.task('staticSass', function (done) {
+	gulp.src('./assets/css/common.scss')
+	.pipe(sass())
+    .on('error', sass.logError)
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
+	.pipe(gulp.dest('../src/assets/css'))
+	.pipe(minifyCss({
+		keepSpecialComments: 0
+	}))
+	.pipe(rename({
+		extname: '.min.css'
+	}))
+	.pipe(gulp.dest('../src/assets/css'))
+	.on('end', done);
+})
 
 //监测更改
 gulp.task('watch', function() {	
@@ -63,4 +81,4 @@ gulp.task('watch', function() {
 	gulp.watch(['./pages/**/*.scss', 'assets/css/common.scss'], ['sass']);
 });
 
-gulp.task('default', ['staticCopy', 'sass', 'concatJS', 'watch']);
+gulp.task('default', ['staticCopy', 'staticSass', 'sass', 'concatJS', 'watch']);
