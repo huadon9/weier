@@ -11,7 +11,9 @@ a,img,span{-webkit-tap-highlight-color:transparent;-webkit-tap-highlight-color:t
 a:active{-webkit-tap-highlight-color:transparent;outline:0}
 button,input,textarea{-webkit-appearance:none;outline:none}
 ::-webkit-input-placeholder {font-family: PingFangSC-Regular, Source Han Sans, Microsoft YaHei, sans-serif } 
-
+a{
+    color: inherit;
+}
 //定义变量
 $themeColor: #EC5151; //主题色
 $themeActiveColor: #ef8080;

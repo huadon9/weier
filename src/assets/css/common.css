@@ -52,6 +52,9 @@ button, input, textarea {
 ::-webkit-input-placeholder {
   font-family: PingFangSC-Regular, Source Han Sans, Microsoft YaHei, sans-serif; }
 
+a {
+  color: inherit; }
+
 body {
   background-color: #f2f2f2; }
 

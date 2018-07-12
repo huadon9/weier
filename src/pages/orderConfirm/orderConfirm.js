@@ -15,4 +15,14 @@ $(document).ready(function () {
         }
         $('.goods-number').val(++number);
     })
+
+    $('.commit').click(function () {
+        $('.cover-bg').removeClass('hide');
+        $('.poper').removeClass('hide');
+    })
+
+    $('.cover-bg').click(function () {
+        $('.cover-bg').addClass('hide');
+        $('.poper').addClass('hide');
+    })
 });
