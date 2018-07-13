@@ -1,0 +1,103 @@
+@import '../../assets/css/const.scss';
+body{
+    background-color: #fff;
+}
+.top-box{
+    width: 100%;
+    height: 158px;
+    background-image: url(../../assets/images/store_bg.png);
+    background-size: 100% 100%;    
+    position: relative;
+    .store-info{
+        width: calc(100% - 36px);
+        border-radius: 4px;
+        box-shadow:0 0 3px #aaaaaa;
+        background-color: #fff;
+        position: absolute;
+        top: 143px;
+        left: 18px;
+    }
+    .store-name{
+        overflow: hidden;
+        width: 100%;
+        .img{
+            width: 50px;
+            height: 50px;
+            border-radius: 3px;
+            border: 1px solid $borderColor;
+            margin: 15px 0 0 13px;
+            img{
+                width: 100%;
+            }
+        }
+        .name{
+            font-size: 13px;
+            color: $fontColor;
+            margin: 15px 0 0 10px;
+        }   
+    }
+    .about-money{
+        width: 100%;
+        height: 78px;
+        display: flex;
+        flex-direction: row;
+        div{
+            flex: 1;
+            text-align: center;
+            .red-number{
+                font-size: 18px;
+                color: $themeColor;
+                margin: 17px 0 2px 0;
+            }
+            .e-label{
+                font-size: 10px;
+                color: $fontColor;
+            }
+        }
+    }
+}
+.goods-list{
+    overflow: hidden;
+    margin-top: 139px;
+    .list-item{
+        display: block;
+        width: 50%;
+        float: left;
+        padding: 0 18px;
+        margin-bottom: 10px;
+        .img{
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+            .img-container{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border: 1px solid $borderColor;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .name{
+            font-size: 11px;
+            color: $fontColor;
+            line-height: 15px;
+            height: 30px;
+            margin-top: 8px;
+            @include lineClamp(2);
+        }
+        .price{
+            font-size: 14px;
+            color: $fontColor;
+            margin-top: 8px;
+            .commission{
+                font-size: 12px;
+                color: $themeColor;
+                font-weight: 800;
+            }
+        }
+    }
+}

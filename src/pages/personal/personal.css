@@ -1,7 +1,8 @@
 .p-content .p-top {
   width: 100%;
   height: 158px;
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative; }
   .p-content .p-top .user {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -59,6 +60,25 @@
           color: #EC5151; }
         .p-content .p-top .u-info div p.u-label {
           color: #323232; }
+  .p-content .p-top .set {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+    .p-content .p-top .set img {
+      width: 18px;
+      margin: 11px; }
+  .p-content .p-top .logo {
+    text-align: center;
+    padding-top: 45px; }
+    .p-content .p-top .logo img {
+      width: 40px; }
+    .p-content .p-top .logo p {
+      font-size: 20px;
+      font-weight: 600;
+      color: #323232;
+      margin-top: 10px; }
 
 .p-content .order-info {
   margin-top: 6px;

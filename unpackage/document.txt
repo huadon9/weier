@@ -41,3 +41,5 @@ commit 评价提交
 applyRefund 申请退款
 afterSale 售后详情
 payok 支付成功
+coupon 优惠券
+store 商家详情
