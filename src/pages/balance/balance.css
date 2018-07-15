@@ -56,12 +56,12 @@ body {
         text-align: center;
         line-height: 78px; }
         .home-content .top .sub-item .item span {
-          border: 1px solid #EC5151;
+          border: 1px solid #2C9195;
           border-radius: 14px;
           padding: 3px 24px;
-          color: #EC5151; }
+          color: #2C9195; }
           .home-content .top .sub-item .item span.active {
-            background-color: #EC5151;
+            background-color: #2C9195;
             color: #fff; }
 
 .b-content {

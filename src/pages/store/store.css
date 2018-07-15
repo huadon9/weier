@@ -48,7 +48,7 @@ body {
       text-align: center; }
       .top-box .about-money div .red-number {
         font-size: 18px;
-        color: #EC5151;
+        color: #2C9195;
         margin: 17px 0 2px 0; }
       .top-box .about-money div .e-label {
         font-size: 10px;
@@ -95,5 +95,5 @@ body {
       margin-top: 8px; }
       .goods-list .list-item .price .commission {
         font-size: 12px;
-        color: #EC5151;
+        color: #2C9195;
         font-weight: 800; }

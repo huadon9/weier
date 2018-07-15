@@ -50,7 +50,7 @@ body {
         right: 0; }
       .top-box .about-money div .red-number {
         font-size: 18px;
-        color: #EC5151;
+        color: #2C9195;
         margin: 17px 0 2px 0; }
       .top-box .about-money div .e-label {
         font-size: 10px;
@@ -97,12 +97,12 @@ body {
         color: #323232; }
         .store-list .store-item .info-text .s-money span {
           font-weight: 800;
-          color: #EC5151; }
+          color: #2C9195; }
     .store-list .store-item .s-level {
       width: 55px; }
       .store-list .store-item .s-level p {
         text-align: center;
-        background-color: #EC5151;
+        background-color: #2C9195;
         border-radius: 3px;
         color: #fff;
         font-size: 11px;

@@ -33,7 +33,7 @@
     line-height: 42px;
     position: relative; }
     .sub-select div.active {
-      color: #EC5151; }
+      color: #2C9195; }
       .sub-select div.active::before {
         content: '';
         position: absolute;
@@ -42,7 +42,7 @@
         bottom: 0;
         left: 15px;
         right: 15px;
-        background-color: #EC5151; }
+        background-color: #2C9195; }
     .sub-select div.asc::after {
       content: '↾';
       font-size: 14px; }
@@ -59,7 +59,7 @@
     border: none;
     border-radius: 10px;
     font-size: 10px;
-    background-color: #EC5151;
+    background-color: #2C9195;
     color: #fff; }
     .add-handle button.added {
       background-color: #BDBDBD; }

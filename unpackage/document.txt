@@ -43,3 +43,7 @@ afterSale 售后详情
 payok 支付成功
 coupon 优惠券
 store 商家详情
+goods 商品详情
+messageContent 信息详情
+cart 购物车
+register 注册

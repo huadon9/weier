@@ -6,7 +6,7 @@
 
 .user {
   height: 124px;
-  background-color: #EC5151;
+  background-color: #2C9195;
   position: relative;
   overflow: hidden; }
   .user .date-show {
@@ -62,6 +62,6 @@
       .cd-list .list-item .info .we-pull-right {
         color: #323232; }
         .cd-list .list-item .info .we-pull-right.bonusing {
-          color: #EC5151; }
+          color: #2C9195; }
         .cd-list .list-item .info .we-pull-right.bonused {
           color: #666; }

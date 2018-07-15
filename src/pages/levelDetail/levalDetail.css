@@ -58,7 +58,7 @@ body {
       .top-box .about-money div .red-number {
         font-size: 18px;
         font-weight: 800;
-        color: #EC5151;
+        color: #2C9195;
         margin: 17px 0 2px 0; }
       .top-box .about-money div .e-label {
         font-size: 10px;
@@ -76,7 +76,7 @@ body {
       width: 23%;
       height: 22px;
       border-radius: 11px 11px 11px 11px;
-      background-color: #EC5151;
+      background-color: #2C9195;
       text-align: right;
       padding-right: 11px;
       line-height: 22px;
@@ -104,7 +104,7 @@ body {
         border-radius: 50%;
         background-color: #f2f2f2; }
         .current-level .deco .d-item i.active {
-          background-color: #EC5151; }
+          background-color: #2C9195; }
   .current-level .l-icon {
     width: calc(100% - 22px);
     margin: 0 0 0 11px;
@@ -129,7 +129,7 @@ body {
     margin: 10px 0 0 11px; }
     .current-level .next-level span {
       display: inline-block;
-      color: #EC5151;
+      color: #2C9195;
       margin-left: 20%; }
 
 .rules {

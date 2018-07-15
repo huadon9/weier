@@ -13,7 +13,7 @@ body {
     -ms-flex-direction: row;
     flex-direction: row;
     height: 84px;
-    background-color: #EC5151; }
+    background-color: #2C9195; }
     .home-content .user .header-img {
       width: 81px; }
       .home-content .user .header-img .img {
@@ -68,7 +68,7 @@ body {
         width: 100px;
         line-height: 55px;
         text-align: right;
-        color: #EC5151;
+        color: #2C9195;
         text-decoration: underline; }
     .home-content .b-content .input-list {
       width: 100%;
@@ -107,7 +107,7 @@ body {
         top: 14px;
         left: 60px;
         padding: 4px 8px;
-        background-color: #EC5151;
+        background-color: #2C9195;
         color: #fff;
         border-radius: 13px;
         border: none; }

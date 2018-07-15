@@ -28,7 +28,7 @@ html, body {
       font-size: 16px;
       color: #323232; }
       .we-content .title-sub div.active {
-        background-color: #EC5151;
+        background-color: #2C9195;
         color: #fff; }
   .we-content .top-three {
     width: 100%;
@@ -92,7 +92,7 @@ html, body {
           text-align: center; }
           .we-content .top-three .th-content .u-name div:nth-child(2) .money {
             font-size: 18px;
-            color: #EC5151;
+            color: #2C9195;
             margin-top: 1px; }
           .we-content .top-three .th-content .u-name div .name {
             padding: 0 10px;
@@ -140,7 +140,7 @@ html, body {
           display: none; }
         .we-content .rank-list .rl-content .rl-item:nth-child(1) .name-money .money span {
           font-size: 14px;
-          color: #EC5151; }
+          color: #2C9195; }
         .we-content .rank-list .rl-content .rl-item .number {
           width: 70px;
           height: 40px;

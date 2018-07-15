@@ -16,7 +16,7 @@
   -ms-flex-direction: row;
   flex-direction: row;
   height: 84px;
-  background-color: #EC5151; }
+  background-color: #2C9195; }
   .user .header-img {
     width: 81px; }
     .user .header-img .img {
@@ -84,7 +84,7 @@
     line-height: 42px;
     position: relative; }
     .sub-select div.active {
-      color: #EC5151; }
+      color: #2C9195; }
       .sub-select div.active::before {
         content: '';
         position: absolute;
@@ -94,7 +94,7 @@
         bottom: 0;
         left: 50%;
         margin-left: -26px;
-        background-color: #EC5151; }
+        background-color: #2C9195; }
     .sub-select div.asc::after {
       content: '↾';
       font-size: 14px; }
@@ -110,7 +110,7 @@
     height: 20px;
     border: none;
     border-radius: 10px;
-    background-color: #EC5151;
+    background-color: #2C9195;
     color: #fff; }
     .add-handle button.added {
       background-color: #BDBDBD; }

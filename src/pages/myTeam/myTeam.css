@@ -23,13 +23,13 @@
     color: #323232;
     position: relative; }
     .sub-tab div.active {
-      color: #EC5151; }
+      color: #2C9195; }
       .sub-tab div.active::after {
         content: '';
         display: block;
         width: 40px;
         height: 1px;
-        background-color: #EC5151;
+        background-color: #2C9195;
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -69,6 +69,6 @@
       padding-right: 15px;
       line-height: 98px;
       font-size: 14px;
-      color: #EC5151; }
+      color: #2C9195; }
       .sub-content .item .money span {
         font-weight: 800; }

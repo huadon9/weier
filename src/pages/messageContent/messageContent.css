@@ -1,0 +1,19 @@
+body {
+  background-color: #fff; }
+
+.we-content {
+  padding: 0 13px;
+  margin-top: 44px; }
+  .we-content .title {
+    font-size: 15px;
+    color: #000;
+    line-height: 30px; }
+  .we-content .name {
+    color: #666;
+    font-size: 10px;
+    line-height: 32px;
+    border-bottom: 0.5px solid #bfbfbf; }
+  .we-content .text {
+    color: #323232;
+    margin-top: 10px;
+    line-height: 19px; }

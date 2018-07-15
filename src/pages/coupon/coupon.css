@@ -26,7 +26,7 @@
     .sub-tab div:nth-last-child(1) {
       border: none; }
     .sub-tab div.active {
-      color: #EC5151; }
+      color: #2C9195; }
 
 .sub-content {
   padding: 10px 13px; }
@@ -60,7 +60,7 @@
         .sub-content .item .header-img .money span {
           font-size: 14px; }
       .sub-content .item .header-img .useble {
-        color: #EC5151; }
+        color: #2C9195; }
     .sub-content .item .info {
       float: left;
       width: calc(100% - 108px);
@@ -72,7 +72,7 @@
         line-height: 19px;
         text-align: center;
         font-weight: 800;
-        background-color: rgba(236, 81, 81, 0.5);
+        background-color: rgba(44, 145, 149, 0.5);
         color: #fff;
         margin-top: 15px; }
       .sub-content .item .info .usefor {
@@ -94,14 +94,14 @@
           height: 6px;
           border-radius: 3px;
           margin: -1px 0 0 -1px;
-          background-color: #EC5151; }
+          background-color: #2C9195; }
       .sub-content .item .info .persent-txt {
         color: #999; }
       .sub-content .item .info .use-now {
         width: 75px;
         height: 27px;
         border-radius: 14px;
-        background-color: #EC5151;
+        background-color: #2C9195;
         font-size: 13px;
         color: #fff;
         position: absolute;
