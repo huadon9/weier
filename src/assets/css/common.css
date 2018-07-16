@@ -132,13 +132,14 @@ body {
       -webkit-box-flex: 1;
       -ms-flex: 1;
       flex: 1;
-      text-align: center; }
+      text-align: center;
+      font-size: 0px; }
       .we-tabbar .we-bar .tabbar-item .icon {
         display: inline-block;
         width: 19px;
         height: 19px;
         background-size: 19px 19px;
-        margin-top: 6px; }
+        margin: 6px 0 3px 0; }
         .we-tabbar .we-bar .tabbar-item .icon.home {
           background-image: url(../../assets/images/home.png); }
         .we-tabbar .we-bar .tabbar-item .icon.find {
@@ -148,9 +149,10 @@ body {
         .we-tabbar .we-bar .tabbar-item .icon.car {
           background-image: url(../../assets/images/car.png); }
       .we-tabbar .we-bar .tabbar-item .item-label {
-        color: #666; }
+        color: #666;
+        font-size: 12px; }
       .we-tabbar .we-bar .tabbar-item.we-active .item-label {
-        color: #EC5151; }
+        color: #2C9195; }
       .we-tabbar .we-bar .tabbar-item.we-active .icon.home {
         background-image: url(../../assets/images/home_active.png); }
       .we-tabbar .we-bar .tabbar-item.we-active .icon.find {
@@ -247,7 +249,7 @@ body {
       right: 60px; }
 
 .theme-btn {
-  background-color: #EC5151;
+  background-color: #2C9195;
   cursor: pointer; }
   .theme-btn:active {
     background-color: #ef8080; }
@@ -305,7 +307,7 @@ body {
       margin-top: 21px; }
       .me-list .list-item .r .price .commission {
         font-size: 13px;
-        color: #EC5151; }
+        color: #2C9195; }
         .me-list .list-item .r .price .commission .deco {
           font-weight: 800; }
 

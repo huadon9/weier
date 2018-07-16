@@ -18,7 +18,7 @@ button{
     padding: 1px 4px 2px;
 }
 //定义变量
-$themeColor: #EC5151; //主题色
+$themeColor: #2C9195; //主题色
 $themeActiveColor: #ef8080;
 $fontColor: #323232;
 $lightFontColor: #666;
@@ -108,12 +108,13 @@ body{
             flex: 1;
             text-align: center;
             $tabSize: 19px;
+            font-size: 0px;
             .icon{
                 display: inline-block;
                 width: $tabSize;
                 height: $tabSize;
                 background-size: $tabSize $tabSize;
-                margin-top: 6px;
+                margin: 6px 0 3px 0;
                 &.home{
                     background-image: url(../../assets/images/home.png);
                 }
@@ -129,6 +130,7 @@ body{
             }
             .item-label{
                 color: $lightFontColor;
+                font-size: 12px;
             }
             &.we-active{
                 .item-label{
