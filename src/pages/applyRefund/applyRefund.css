@@ -20,6 +20,16 @@ body {
     flex-direction: row;
     border-bottom: 0.5px solid #bfbfbf;
     position: relative; }
+    .home-content .b-content .input-list .down-arrow {
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 17px;
+      right: 11px;
+      background-image: url(../../assets/images/right_arrow.png);
+      background-size: 22px 22px;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
     .home-content .b-content .input-list.tel {
       border-top: 0.5px solid #bfbfbf;
       border-bottom: none; }
@@ -43,6 +53,11 @@ body {
       line-height: 55px;
       font-size: 15px;
       color: #323232; }
+      .home-content .b-content .input-list .r input {
+        font-size: 12px;
+        border: none;
+        margin-top: -4px;
+        vertical-align: middle; }
       .home-content .b-content .input-list .r select {
         width: 100%;
         background-color: transparent;

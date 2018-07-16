@@ -50,6 +50,7 @@ body {
         right: 0; }
       .top-box .about-money div .red-number {
         font-size: 18px;
+        font-weight: 600;
         color: #2C9195;
         margin: 17px 0 2px 0; }
       .top-box .about-money div .e-label {
@@ -58,6 +59,7 @@ body {
 
 .store-title {
   color: #323232;
+  font-weight: 600;
   padding: 0 13px;
   margin-top: 45px; }
 

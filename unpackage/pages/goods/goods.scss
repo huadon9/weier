@@ -48,6 +48,10 @@ body{
         .imgs{
             margin-top: 10px;
             border: none;
+            .img{
+                width: 105px;
+                height: 105px;
+            }
             .video{
                 position: relative;
                 &::after{
@@ -64,7 +68,7 @@ body{
                 }
             }
         }
-        border-bottom: 5px solid $borderColor;
+        border-bottom: 5px solid #e3e3e8;
         &:nth-last-child(1){
             border: none;
         }
@@ -415,6 +419,11 @@ body{
             height: 49px;
             display: flex;
             flex-direction: row;
+            .item{
+                .icon{
+                    margin: 5px 0 3px 10px
+                }
+            }
         }
         .we-pull-right{
             button{

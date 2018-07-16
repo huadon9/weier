@@ -64,19 +64,28 @@
       width: 91px;
       height: 91px;
       margin: 15px; }
-    .me-list .list-item .r .count-price {
-      text-align: right;
-      font-size: 18px;
-      color: #323232;
-      line-height: 35px; }
-      .me-list .list-item .r .count-price .text {
-        font-size: 14px;
-        color: #666; }
-      .me-list .list-item .r .count-price .deco {
-        font-size: 12px;
-        color: #666; }
-    .me-list .list-item .r .price {
-      color: #2C9195; }
+    .me-list .list-item .r {
+      padding-left: 0; }
+      .me-list .list-item .r .name {
+        margin-top: 20px; }
+      .me-list .list-item .r .info {
+        margin-top: 0;
+        padding: 0; }
+      .me-list .list-item .r .price {
+        margin-top: 6px; }
+      .me-list .list-item .r .count-price {
+        text-align: right;
+        font-size: 18px;
+        color: #323232;
+        line-height: 35px; }
+        .me-list .list-item .r .count-price .text {
+          font-size: 14px;
+          color: #666; }
+        .me-list .list-item .r .count-price .deco {
+          font-size: 12px;
+          color: #666; }
+      .me-list .list-item .r .price {
+        color: #2C9195; }
   .me-list .info {
     overflow: hidden;
     padding: 2px 13px;

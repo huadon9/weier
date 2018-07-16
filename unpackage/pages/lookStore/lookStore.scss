@@ -49,4 +49,7 @@ body{
 }
 .all-product{
     margin: 51px 0 15px 0;
+    button{
+        border-color: $borderColor;
+    }
 }

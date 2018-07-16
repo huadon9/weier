@@ -41,10 +41,13 @@ body {
   padding: 0 13px;
   margin-bottom: 10px; }
   .comment-item.tu-item {
-    border-bottom: 5px solid #bfbfbf; }
+    border-bottom: 5px solid #e3e3e8; }
     .comment-item.tu-item .imgs {
       margin-top: 10px;
       border: none; }
+      .comment-item.tu-item .imgs .img {
+        width: 105px;
+        height: 105px; }
       .comment-item.tu-item .imgs .video {
         position: relative; }
         .comment-item.tu-item .imgs .video::after {
@@ -354,6 +357,8 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row; }
+    .goods-footer .we-pull-left .item .icon {
+      margin: 5px 0 3px 10px; }
   .goods-footer .we-pull-right button {
     width: 80px;
     height: 40px;

@@ -79,6 +79,17 @@
             }
         }
         .r{
+            padding-left: 0;
+            .name{
+                margin-top: 20px;
+            }
+            .info{
+                margin-top: 0;
+                padding: 0;
+            }
+            .price{
+                margin-top: 6px;
+            }
             .count-price{
                 text-align: right;
                 font-size: 18px;

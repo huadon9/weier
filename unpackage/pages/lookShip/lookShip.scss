@@ -74,6 +74,7 @@ body{
         .deco{
             width: 60px;
             overflow: hidden;
+            position: relative;
             .circle{
                 width: 10px;
                 height: 10px;
@@ -82,10 +83,12 @@ body{
                 margin: 5px 0 0 25px;
             }
             .line{
-                width: 1px;
-                height: 100%;
+                width: 1px;                
                 background-color: rgba($moreLightColor, 0.2);
-                margin: 5px 0 0 29.5px;
+                position: absolute;
+                top: 15px;
+                bottom: 0;
+                left: 29.5px;
             }
         }
         .text{
@@ -121,6 +124,7 @@ body{
                 }
                 .line{
                     background-color: #24A567;
+                    top: 36px;
                 }
             }
             .text{

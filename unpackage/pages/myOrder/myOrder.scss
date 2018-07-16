@@ -72,6 +72,15 @@
         }
         .r{
             padding: 0 13px 0 0;
+            .name{
+                margin-top: 20px;
+            }
+            .info{
+                margin-top: 0;
+            }
+            .price{
+                margin-top: 6px;
+            }
             .count-price{
                 text-align: right;
                 font-size: 18px;
@@ -87,13 +96,16 @@
                 }
             }
         }
+        &::after{
+            display: none;
+        }
     }
     .handle{
         text-align: right;
         padding: 10px 13px; 
         background-color: #fff;
         margin-bottom: 5px;  
-        border-top: 0.5px solid $lightBorderColor;
+        border-top: 1px solid rgba($moreLightColor, .1);
         button{
             width: 74px;
             height: 26px;
@@ -101,11 +113,11 @@
             background-color: #fff;                                             
             &.gray-btn{
                 color: $lightFontColor;
-                border: 1px solid $lightFontColor;
+                border: 0.5px solid $lightFontColor;
             }
             &.active-btn{
                 color: $themeColor;
-                border: 1px solid $themeColor;
+                border: 0.5px solid $themeColor;
                 margin-left: 15px;
             }
         }

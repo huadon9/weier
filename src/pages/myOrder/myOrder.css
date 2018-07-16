@@ -62,6 +62,12 @@
       margin: 14px; }
   .me-list .list-item .r {
     padding: 0 13px 0 0; }
+    .me-list .list-item .r .name {
+      margin-top: 20px; }
+    .me-list .list-item .r .info {
+      margin-top: 0; }
+    .me-list .list-item .r .price {
+      margin-top: 6px; }
     .me-list .list-item .r .count-price {
       text-align: right;
       font-size: 18px;
@@ -73,13 +79,15 @@
       .me-list .list-item .r .count-price .deco {
         font-size: 12px;
         color: #666; }
+  .me-list .list-item::after {
+    display: none; }
 
 .me-list .handle {
   text-align: right;
   padding: 10px 13px;
   background-color: #fff;
   margin-bottom: 5px;
-  border-top: 0.5px solid rgba(191, 191, 191, 0.4); }
+  border-top: 1px solid rgba(153, 153, 153, 0.1); }
   .me-list .handle button {
     width: 74px;
     height: 26px;
@@ -87,8 +95,8 @@
     background-color: #fff; }
     .me-list .handle button.gray-btn {
       color: #666;
-      border: 1px solid #666; }
+      border: 0.5px solid #666; }
     .me-list .handle button.active-btn {
       color: #2C9195;
-      border: 1px solid #2C9195;
+      border: 0.5px solid #2C9195;
       margin-left: 15px; }

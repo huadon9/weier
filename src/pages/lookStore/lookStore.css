@@ -49,3 +49,5 @@ body {
 
 .all-product {
   margin: 51px 0 15px 0; }
+  .all-product button {
+    border-color: #bfbfbf; }

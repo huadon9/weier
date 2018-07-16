@@ -71,7 +71,8 @@ body {
     flex-direction: row; }
     .info .item .deco {
       width: 60px;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
       .info .item .deco .circle {
         width: 10px;
         height: 10px;
@@ -80,9 +81,11 @@ body {
         margin: 5px 0 0 25px; }
       .info .item .deco .line {
         width: 1px;
-        height: 100%;
         background-color: rgba(153, 153, 153, 0.2);
-        margin: 5px 0 0 29.5px; }
+        position: absolute;
+        top: 15px;
+        bottom: 0;
+        left: 29.5px; }
     .info .item .text {
       -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -110,7 +113,8 @@ body {
         border-radius: 5px;
         margin: 3px; }
     .info .item:nth-child(1) .deco .line {
-      background-color: #24A567; }
+      background-color: #24A567;
+      top: 36px; }
     .info .item:nth-child(1) .text {
       color: #24A567; }
     .info .item:nth-last-child(1) .deco .line {

@@ -142,6 +142,10 @@
                         }
                     }
                 }
+                select{
+                    -webkit-appearance: none;
+                    border: none;
+                }
             }
         }
     }
@@ -175,8 +179,8 @@
                 }
                 &.delete{
                     width: 75px;
-                    border: 1px solid $redColor;
-                    color: $redColor;
+                    border: 1px solid $themeColor;
+                    color: $themeColor;
                 }
             }
         }

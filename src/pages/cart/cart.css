@@ -117,6 +117,9 @@
               text-align: center;
               border: none;
               vertical-align: top; }
+        .we-content .store-goods .goods-item .info select {
+          -webkit-appearance: none;
+          border: none; }
 
 .sub-footer {
   width: 100%;
@@ -141,8 +144,8 @@
         color: #999; }
       .sub-footer .we-pull-right.save-models button.delete {
         width: 75px;
-        border: 1px solid #EC5151;
-        color: #EC5151; }
+        border: 1px solid #2C9195;
+        color: #2C9195; }
   .sub-footer .select {
     width: 40px;
     height: 40px;

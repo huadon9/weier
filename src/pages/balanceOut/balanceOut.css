@@ -94,10 +94,11 @@ body {
         .home-content .b-content .input-list .r input, .home-content .b-content .input-list .r select {
           width: 100%;
           background-color: transparent;
-          color: #999;
+          color: #323232;
           padding: 10px 0 13px 10px;
           border: none;
-          text-align: right; }
+          text-align: right;
+          font-size: 13px; }
         .home-content .b-content .input-list .r input {
           padding-right: 3px; }
           .home-content .b-content .input-list .r input::-webkit-input-placeholder {

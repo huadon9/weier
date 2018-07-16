@@ -26,7 +26,10 @@ body {
         color: #323232;
         margin: 16px 0 0 7px; }
       .top-box .header-img .name-level .level {
-        margin: 6px 0 0 7px; }
+        margin: 6px 0 0 7px;
+        text-align: center;
+        background-color: #2C9195;
+        color: #fff; }
   .top-box .about-money {
     width: calc(100% - 36px);
     height: 78px;

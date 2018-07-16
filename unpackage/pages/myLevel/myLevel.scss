@@ -51,6 +51,7 @@ body{
             }
             .red-number{
                 font-size: 18px;
+                font-weight: 600;
                 color: $themeColor;
                 margin: 17px 0 2px 0;
             }
@@ -63,6 +64,7 @@ body{
 }
 .store-title{
     color: $fontColor;
+    font-weight: 600;
     padding: 0 13px;
     margin-top: 45px;
 }
