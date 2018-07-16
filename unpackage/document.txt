@@ -47,3 +47,7 @@ goods 商品详情
 messageContent 信息详情
 cart 购物车
 register 注册
+login 登录
+forgetPassword 忘记密码
+pushTu 发布素材
+find 发现

@@ -14,6 +14,9 @@ button,input,textarea{-webkit-appearance:none;outline:none}
 a{
     color: inherit;
 }
+button{
+    padding: 1px 4px 2px;
+}
 //定义变量
 $themeColor: #EC5151; //主题色
 $themeActiveColor: #ef8080;

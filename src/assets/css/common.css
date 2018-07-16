@@ -55,6 +55,9 @@ button, input, textarea {
 a {
   color: inherit; }
 
+button {
+  padding: 1px 4px 2px; }
+
 body {
   background-color: #f2f2f2; }
 

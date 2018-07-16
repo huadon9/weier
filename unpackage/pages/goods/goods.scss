@@ -13,6 +13,10 @@ body{
                 font-size: 15px;
                 color: $fontColor;
                 flex: 1;
+                img{
+                    width: 24px;
+                    margin-top: -3px;
+                }
                 &.active{
                     color: $themeColor;
                 }
@@ -44,6 +48,21 @@ body{
         .imgs{
             margin-top: 10px;
             border: none;
+            .video{
+                position: relative;
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background-image: url(../../assets/images/video_icon.png);
+                    background-size: 50px 50px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -25px 0 0 -25px;
+                }
+            }
         }
         border-bottom: 5px solid $borderColor;
         &:nth-last-child(1){
@@ -111,8 +130,16 @@ body{
             right: 0;
             bottom: 0;
             background-color: #fff;
+            &.downed{
+                img{
+                    transform: rotate(180deg);
+                }
+            }
             .we-pull-right{
-                color: $themeColor;
+                .s-text{
+                    color: $themeColor;
+                }    
+                
             }
             img{
                 width: 8px;
@@ -148,6 +175,10 @@ body{
     text-align: center;
     line-height: 34px;
     color: #fff;
+    img{
+        width: 16px;
+        margin: -3px 4px 0 0;
+    }
 }
 .swiper-container{
 	width:100%;	
@@ -330,6 +361,9 @@ body{
                 }
                 &.like{
                     background-image: url(../../assets/images/like_icon.png);
+                    &.liked{
+                        background-image: url(../../assets/images/liked_icon.png);
+                    }
                 }
                 &.cart{
                     background-image: url(../../assets/images/s_cart.png);
@@ -369,6 +403,34 @@ body{
             }
             &:nth-child(2){
                 background-color: $blueColor;
+            }
+        }
+    }
+}
+@media (max-width: 370px) { 
+    .goods-footer{
+
+        .we-pull-left{
+            width: 120px;
+            height: 49px;
+            display: flex;
+            flex-direction: row;
+        }
+        .we-pull-right{
+            button{
+                width: 80px;
+                height: 40px;
+                font-size: 13px;
+                color: #fff;
+                border-radius: 20px;
+                border: none;
+                margin: 5px 5px 0 0;
+                &:nth-child(1){
+                    background-color: #3D5BA6;
+                }
+                &:nth-child(2){
+                    background-color: $blueColor;
+                }
             }
         }
     }

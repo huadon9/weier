@@ -7,8 +7,7 @@ var swiper = new Swiper('.swiper-container',{
 $(document).ready(function () {
     $('.sub-item').click(function () {  
         $('.sub-item').removeClass('active');
-        $(this).addClass('active');   
-        $('.we-tabbar').addClass('hide');     
+        $(this).addClass('active');       
         if($(this).hasClass('goods')) {
             $('.we-content').addClass('hide');
             $('.we-content.goods').removeClass('hide');
@@ -30,12 +29,30 @@ $(document).ready(function () {
             return;
         }
         if($(this).hasClass('tabbar')) {
-            $('.we-tabbar').removeClass('hide');
-            return;
+            if ($('.we-tabbar').hasClass('hide')) {
+                $('.we-tabbar').removeClass('hide');
+            } else {
+                $('.we-tabbar').addClass('hide');
+            }
         }
     })
 
     $('.video').click(function () {  
         $(this).parent().siblings('.videos').removeClass('hide');
     })
+
+    $('.see-all').click(function () {
+        if ($(this).hasClass('downed')) {
+            $(this).removeClass('downed');
+            $(this).parent().addClass('ellipsis');
+            $(this).find('.ell').text('...');
+            $(this).find('.s-text').text('展开');
+        } else {
+            $(this).addClass('downed');
+            $(this).parent().removeClass('ellipsis');
+            $(this).find('.ell').text('');
+            $(this).find('.s-text').text('收起');
+        }
+        
+    }) 
 });

@@ -7,6 +7,8 @@ html,body{
     height: 100%;
     padding: 0 13px;
     overflow: hidden;
+    background-image: url(../../assets/images/login_bg.png);
+    background-size: 100% 100%;
     .logo{
         width: 82px;
         height: 82px;
@@ -110,8 +112,12 @@ html,body{
             flex-direction: row;
             a{
                 flex: 1;
-                p{
-                    text-align: center;
+                text-align: center;
+                img{
+                    width: 39px;
+                    margin-bottom: 10px;
+                }
+                p{                    
                     font-size: 10px;
                     color: $lightFontColor;
                 }

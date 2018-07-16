@@ -1,0 +1,138 @@
+body {
+  width: 100%;
+  background-color: #f2f2f2;
+  background-image: url(../../assets/images/find_bg.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.we-content {
+  padding: 62px 13px 10px 13px; }
+  .we-content .item {
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px; }
+    .we-content .item .user {
+      margin-top: 10px;
+      overflow: hidden; }
+      .we-content .item .user .img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #bfbfbf;
+        overflow: hidden; }
+        .we-content .item .user .img img {
+          width: 100%; }
+      .we-content .item .user .name-time {
+        padding-left: 10px; }
+        .we-content .item .user .name-time p:nth-child(1) {
+          color: #323232;
+          margin-top: 4px; }
+        .we-content .item .user .name-time p:nth-child(2) {
+          color: #666;
+          font-size: 10px; }
+      .we-content .item .user .share {
+        padding: 0 0 13px 15px; }
+        .we-content .item .user .share img {
+          width: 18px; }
+    .we-content .item .text {
+      color: #323232;
+      line-height: 22px;
+      margin-top: 6px; }
+    .we-content .item .true-text {
+      font-size: 10px;
+      color: #666;
+      position: relative;
+      margin-top: 10px; }
+      .we-content .item .true-text.ellipsis {
+        word-break: break-all;
+        white-space: pre-wrap;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .we-content .item .true-text .see-all {
+        width: 60px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: #fff; }
+        .we-content .item .true-text .see-all.downed img {
+          -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+        .we-content .item .true-text .see-all .we-pull-right .s-text {
+          color: #2C9195; }
+        .we-content .item .true-text .see-all img {
+          width: 8px;
+          margin-top: -2px; }
+    .we-content .item .imgs {
+      overflow: hidden;
+      margin-top: 10px; }
+      .we-content .item .imgs .img {
+        width: 105px;
+        height: 105px;
+        overflow: hidden;
+        border-radius: 6px;
+        margin: 0 5px 10px 0;
+        float: left; }
+        .we-content .item .imgs .img img {
+          width: 100%; }
+    .we-content .item .videos {
+      width: 100%;
+      min-height: 200px;
+      border-radius: 8px;
+      border: 1px solid #bfbfbf;
+      margin-top: 10px;
+      overflow: hidden;
+      position: relative; }
+      .we-content .item .videos.hide-play::after {
+        display: none; }
+      .we-content .item .videos.hide-play img {
+        display: none; }
+      .we-content .item .videos::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-image: url(../../assets/images/video_icon.png);
+        background-size: 60px auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -30px 0 0 -30px; }
+      .we-content .item .videos img {
+        width: 100%; }
+      .we-content .item .videos .video {
+        width: 100%; }
+        .we-content .item .videos .video video {
+          width: 100%; }
+        .we-content .item .videos .video.hide {
+          display: none; }
+    .we-content .item .goods-simple-info {
+      width: 100%;
+      height: 64px;
+      margin: 10px 0; }
+      .we-content .item .goods-simple-info .container {
+        width: 100%;
+        height: 100%;
+        background-color: #f2f2f2;
+        border-radius: 8px; }
+        .we-content .item .goods-simple-info .container .img {
+          width: 50px;
+          height: 50px;
+          border-radius: 8px;
+          margin: 7px 6px 0 10px;
+          float: left;
+          overflow: hidden; }
+          .we-content .item .goods-simple-info .container .img img {
+            width: 100%; }
+        .we-content .item .goods-simple-info .container .info {
+          float: left;
+          width: calc(100% - 76px); }
+          .we-content .item .goods-simple-info .container .info .name {
+            color: #666;
+            margin-top: 6px; }
+          .we-content .item .goods-simple-info .container .info .price {
+            color: #EC5151; }

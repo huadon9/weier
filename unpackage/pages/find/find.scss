@@ -1,0 +1,177 @@
+@import '../../assets/css/const.scss';
+
+body{
+    width: 100%;
+    background-color: $backgroundColor;
+    background-image: url(../../assets/images/find_bg.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.we-content{
+    padding: 62px 13px 10px 13px;
+    .item{
+        width: 100%;
+        padding: 10px 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        .user{
+            margin-top: 10px;
+            overflow: hidden;
+            .img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid $borderColor;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+            .name-time{
+                padding-left: 10px;
+                p{
+                    &:nth-child(1){
+                        color: $fontColor;
+                        margin-top: 4px;
+                    }
+                    &:nth-child(2){
+                        color: $lightFontColor;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .share{
+                padding: 0 0 13px 15px;
+                img{
+                    width: 18px;
+                }
+            }
+        }
+        .text{
+            color: $fontColor;
+            line-height: 22px;
+            margin-top: 6px;
+        }
+        .true-text{
+            font-size: 10px;
+            color: $lightFontColor;
+            position: relative;
+            margin-top: 10px;
+            &.ellipsis{
+                @include lineClamp(3);
+            }
+            .see-all{
+                width: 60px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background-color: #fff;
+                &.downed{
+                    img{
+                        transform: rotate(180deg);
+                    }
+                }
+                .we-pull-right{
+                    .s-text{
+                        color: $themeColor;
+                    }    
+                    
+                }
+                img{
+                    width: 8px;
+                    margin-top: -2px;
+                }
+            }
+        }
+        .imgs{
+            overflow: hidden;
+            margin-top: 10px;
+            .img{
+                width: 105px;
+                height: 105px;
+                overflow: hidden;
+                border-radius: 6px;
+                margin: 0 5px 10px 0;
+                float: left;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .videos{
+            width: 100%;
+            min-height: 200px;
+            border-radius: 8px;
+            border: 1px solid $borderColor;
+            margin-top: 10px;
+            overflow: hidden;
+            position: relative;
+            &.hide-play{
+                &::after{
+                    display: none;
+                }
+                img{
+                    display: none;
+                }
+            }
+            &::after{
+                content: '';
+                display: block;
+                width: 60px;
+                height: 60px;
+                background-image: url(../../assets/images/video_icon.png);
+                background-size: 60px auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -30px 0 0 -30px;
+            }
+            img{
+                width: 100%;
+            }
+            .video{
+                width: 100%;
+                video{
+                    width: 100%;
+                }
+                &.hide{
+                    display: none;
+                }
+            }
+        }
+        .goods-simple-info{
+            width: 100%;
+            height: 64px;
+            margin: 10px 0;
+            .container{
+                width: 100%;
+                height: 100%;
+                background-color: $backgroundColor;
+                border-radius: 8px;
+                .img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                    margin: 7px 6px 0 10px;
+                    float: left;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .info{
+                    float: left;
+                    width: calc(100% - 76px);
+                    .name{
+                        color: $lightFontColor;
+                        margin-top: 6px;
+                    }
+                    .price{
+                        color: $redColor;
+                    }
+                }
+            }
+        }
+    }
+}
