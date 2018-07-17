@@ -55,4 +55,23 @@ $(document).ready(function () {
         }
         
     }) 
+
+    $('.goods-standard').click(function () {
+        $('.cover-bg').removeClass('hide');
+        $('.poper').removeClass('hide');
+    })
+    $('.cover-bg').click(function () {
+        $('.cover-bg').addClass('hide');
+        $('.poper').addClass('hide');
+    })
+    $('.close').click(function () {
+        $('.cover-bg').addClass('hide');
+        $('.poper').addClass('hide');
+    })
+
+    $('.goods-type .item').click(function () {
+        $('.goods-type .item').removeClass('selected');
+        $(this).addClass('selected');
+    })
+
 });

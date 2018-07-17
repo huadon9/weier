@@ -366,3 +366,30 @@ body {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+
+.cover-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9998;
+  background-color: #000;
+  opacity: .4;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s; }
+  .cover-bg.hide {
+    display: none;
+    opacity: 0; }
+
+.poper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #fff;
+  -webkit-transition: bottom .3s;
+  transition: bottom .3s; }
+  .poper.hide {
+    bottom: -100%; }
