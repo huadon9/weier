@@ -106,13 +106,13 @@
                     .we-pull-right{
                         font-size: 14px;
                         color: $moreLightColor;
-                        border: 1px solid $borderColor;
+                        border: 1px solid #ddd;
                         border-radius: 4px;
                         height: 30px;
                         img{
                             width: 22px;
                             margin: -3px -5px 0 0;
-                        }
+                        }                    
                         .handle{
                             width: 30px;
                             height: 28px;
@@ -128,10 +128,10 @@
                             }
                         }
                         .sub{
-                            border-right: 1px solid $borderColor;
+                            border-right: 1px solid #ddd;
                         }
                         .add{
-                            border-left: 1px solid $borderColor;
+                            border-left: 1px solid #ddd;
                         }
                         input{
                             height: 28px;
@@ -140,6 +140,13 @@
                             border: none;
                             vertical-align: top;
                         }
+                    }
+                }
+                .spec{
+                    .down-arrow{
+                        width: 15px;     
+                        transform: rotate(90deg);
+                        margin-left: 4px;
                     }
                 }
                 select{

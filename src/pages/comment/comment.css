@@ -45,7 +45,7 @@ body {
   .comment-text textarea {
     width: 100%;
     height: 100%;
-    padding: 0 13px;
+    padding: 10px 13px;
     color: #666;
     border: none;
     font-size: 14px; }

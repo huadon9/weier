@@ -261,7 +261,7 @@ body{
     background-color: $themeColor;
     cursor: pointer;
     &:active{
-        background-color: $themeActiveColor;   
+        background-color: rgba($themeColor, .8);   
     }
 }
 .me-list{

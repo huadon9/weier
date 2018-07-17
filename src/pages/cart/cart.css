@@ -90,7 +90,7 @@
           .we-content .store-goods .goods-item .info .price-count .we-pull-right {
             font-size: 14px;
             color: #999;
-            border: 1px solid #bfbfbf;
+            border: 1px solid #ddd;
             border-radius: 4px;
             height: 30px; }
             .we-content .store-goods .goods-item .info .price-count .we-pull-right img {
@@ -108,15 +108,20 @@
               .we-content .store-goods .goods-item .info .price-count .we-pull-right .handle.disable {
                 background-color: rgba(222, 222, 222, 0.5); }
             .we-content .store-goods .goods-item .info .price-count .we-pull-right .sub {
-              border-right: 1px solid #bfbfbf; }
+              border-right: 1px solid #ddd; }
             .we-content .store-goods .goods-item .info .price-count .we-pull-right .add {
-              border-left: 1px solid #bfbfbf; }
+              border-left: 1px solid #ddd; }
             .we-content .store-goods .goods-item .info .price-count .we-pull-right input {
               height: 28px;
               width: 30px;
               text-align: center;
               border: none;
               vertical-align: top; }
+        .we-content .store-goods .goods-item .info .spec .down-arrow {
+          width: 15px;
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+          margin-left: 4px; }
         .we-content .store-goods .goods-item .info select {
           -webkit-appearance: none;
           border: none; }

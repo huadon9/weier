@@ -255,7 +255,7 @@ body {
   background-color: #2C9195;
   cursor: pointer; }
   .theme-btn:active {
-    background-color: #ef8080; }
+    background-color: rgba(44, 145, 149, 0.8); }
 
 .me-list .list-item {
   display: -webkit-box;
