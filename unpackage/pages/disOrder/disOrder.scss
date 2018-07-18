@@ -1,0 +1,125 @@
+@import '../../assets/css/const.scss';
+
+.home-content{
+    overflow: hidden;
+    padding-top: 44px;
+    margin-bottom: 50px;
+}
+
+.sub-select{
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.5px solid $borderColor;
+    background-color: #fff;
+    div{
+        flex: 1;
+        color: $fontColor;
+        text-align: center;
+        line-height: 42px;
+        position: relative;
+        &.active{
+            color: $themeColor;
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                height: 1px;
+                bottom: 0;
+                left: 15px;
+                right: 15px;
+                background-color: $themeColor;
+            }
+        }
+    }
+}
+
+.me-list .list-item:after{
+    left: 0;
+    right: 0;
+}
+
+.me-list{
+    padding: 5px 15px 0;
+    .list-container{
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .store{
+        padding: 0 13px;
+        color: $fontColor;
+        background-color: #fff;
+        line-height: 40px;
+        overflow: hidden;
+        .we-pull-left{
+            font-size: 12px;
+            color: $fontColor;
+            font-weight: 600;
+        }
+        .we-pull-right{
+            font-size: 11px;
+            font-weight: 600;
+            color: $moreLightColor;
+            &.active{
+                color: $themeColor;
+            }
+        }
+    }
+    .list-item{
+        background-color: #fff;
+        .l{
+            width: 121px;
+            .img{
+                width: 91px;
+                height: 91px;
+                margin: 14px;
+                border-radius: 5px;
+            }
+        }
+        .r{
+            padding: 0 13px 0 0;
+            .name{
+                margin-top: 20px;
+            }
+            .info{
+                margin-top: 0;
+            }
+            .price{
+                margin-top: 6px;
+                font-size: 13px;
+                color: $themeColor
+            }
+            .dis-price{
+                font-size: 10px;
+                color: $themeColor;
+                margin: 2px 0 10px;
+            }
+        }
+        &::after{
+            display: none;
+        }
+    }
+    .handle{
+        text-align: right;
+        padding: 10px 13px; 
+        background-color: #fff;
+        margin-bottom: 5px;  
+        border-top: 1px solid rgba($moreLightColor, .1);
+        button{
+            width: 74px;
+            height: 26px;
+            border-radius: 13px;
+            background-color: #fff;                                             
+            &.gray-btn{
+                color: $lightFontColor;
+                border: 0.5px solid $lightFontColor;
+            }
+            &.active-btn{
+                color: $themeColor;
+                border: 0.5px solid $themeColor;
+                margin-left: 15px;
+            }
+        }
+    }
+}
