@@ -34,13 +34,13 @@
     display: block;
     width: 100%;
     border-radius: 5px;
-    height: 126px;
+    height: 140px;
     background-color: #fff;
     margin-top: 5px;
     overflow: hidden; }
     .sub-content .item .header-img {
       width: 107px;
-      height: 126px;
+      height: 140px;
       overflow: hidden;
       text-align: center;
       float: left;
@@ -48,12 +48,13 @@
       .sub-content .item .header-img::after {
         content: '';
         width: 2px;
-        height: 126px;
+        bottom: 0;
         position: absolute;
         top: 0;
         right: 0;
         background-image: url(../../assets/images/coupon_bg.png);
-        background-size: 2px auto; }
+        background-size: 2px 100%;
+        background-repeat: repeat-y; }
       .sub-content .item .header-img .money {
         font-size: 36px;
         margin-top: 21px; }
@@ -78,11 +79,19 @@
       .sub-content .item .info .usefor {
         color: #323232;
         font-weight: 600;
-        margin-top: 10px; }
+        margin-top: 8px;
+        word-break: break-all;
+        white-space: pre-wrap;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 34px; }
       .sub-content .item .info .time {
         color: #999;
         font-size: 10px;
-        margin-top: 10px; }
+        margin-top: 5px; }
       .sub-content .item .info .persent {
         width: 101px;
         height: 6px;

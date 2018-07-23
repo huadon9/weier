@@ -33,13 +33,34 @@
         display: block;
         width: 100%;
         border-radius: 5px;
-        height: 126px;
+        // height: 126px;
         background-color: #fff;
         margin-top: 5px;
         overflow: hidden;
+        .top-container{
+            width: 100%;
+            height: 140px;
+        }
+        .b-container{
+            height: 44px;
+            line-height: 44px;
+            padding-left: 15px;
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background-image: url(../../assets/images/dotted.png);
+                background-size: 100% auto;
+            }
+        }
         .header-img{
             width: 107px;
-            height: 126px;
+            height: 140px;
             overflow: hidden;      
             text-align: center;
             float: left;
@@ -47,7 +68,7 @@
             &::after{
                 content: '';
                 width: 2px;
-                height: 126px;
+                height: 140px;
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -83,12 +104,14 @@
             .usefor{
                 color: $fontColor;
                 font-weight: 600;
-                margin-top: 10px;
+                margin-top: 8px;
+                @include lineClamp(2);
+                height: 34px;
             }
             .time{
                 color: $moreLightColor;
                 font-size: 10px;
-                margin-top: 10px;
+                margin-top: 5px;
             }
             .persent{
                 width: 101px;
@@ -120,6 +143,13 @@
                 border: none;
                 &.used{
                     background-color: #D2CECE;
+                }
+                &.pasted{
+                    background-image: url(../../assets/images/pasted.png);
+                    background-size: 100% auto;
+                    background-color: transparent;
+                    border-radius: 0;
+                    height: 44px;
                 }
             }
         }

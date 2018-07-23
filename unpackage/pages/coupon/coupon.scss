@@ -33,13 +33,13 @@
         display: block;
         width: 100%;
         border-radius: 5px;
-        height: 126px;
+        height: 140px;
         background-color: #fff;
         margin-top: 5px;
         overflow: hidden;
         .header-img{
             width: 107px;
-            height: 126px;
+            height: 140px;
             overflow: hidden;      
             text-align: center;
             float: left;
@@ -47,12 +47,13 @@
             &::after{
                 content: '';
                 width: 2px;
-                height: 126px;
+                bottom: 0;
                 position: absolute;
                 top: 0;
                 right: 0;
                 background-image: url(../../assets/images/coupon_bg.png);
-                background-size: 2px auto;
+                background-size: 2px 100%;
+                background-repeat: repeat-y;
             }
             .money{
                 font-size: 36px;
@@ -83,12 +84,14 @@
             .usefor{
                 color: $fontColor;
                 font-weight: 600;
-                margin-top: 10px;
+                margin-top: 8px;
+                @include lineClamp(2);
+                height: 34px;
             }
             .time{
                 color: $moreLightColor;
                 font-size: 10px;
-                margin-top: 10px;
+                margin-top: 5px;
             }
             .persent{
                 width: 101px;
