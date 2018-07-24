@@ -42,6 +42,7 @@ applyRefund 申请退款
 afterSale 售后详情
 payok 支付成功
 coupon 优惠券
+myCoupon 我的优惠券
 store 商家详情
 goods 商品详情
 messageContent 信息详情

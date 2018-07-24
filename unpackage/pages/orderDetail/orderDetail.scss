@@ -47,8 +47,9 @@
 }
 
 .me-list{
-    margin-top: 5px;
+    margin: 5px 0 50px 0;
     background-color: #fff;
+    border-bottom: 1px solid $borderColor;
     .store{
         padding-left: 13px;
         color: $fontColor;
@@ -106,6 +107,9 @@
             }
             .price{
                 color: $themeColor;
+                span{
+                    color: $moreLightColor;
+                }
             }
         }
     }
