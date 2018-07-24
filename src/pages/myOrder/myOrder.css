@@ -39,7 +39,7 @@
   right: 0; }
 
 .me-list .store {
-  padding-left: 13px;
+  padding: 0 13px;
   color: #323232;
   background-color: #fff;
   line-height: 40px; }
@@ -51,6 +51,9 @@
   .me-list .store .a-icon {
     width: 20px;
     margin-top: -2px; }
+  .me-list .store .we-pull-right {
+    font-size: 13px;
+    color: #EC5151; }
 
 .me-list .list-item {
   background-color: #fff;

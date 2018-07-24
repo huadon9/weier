@@ -41,7 +41,7 @@
 
 .me-list{
     .store{
-        padding-left: 13px;
+        padding:0 13px;
         color: $fontColor;
         background-color: #fff;
         line-height: 40px;
@@ -58,6 +58,10 @@
         .a-icon{
             width: 20px;
             margin-top: -2px;
+        }
+        .we-pull-right{
+            font-size: 13px;
+            color: $redColor;
         }
     }
     .list-item{
