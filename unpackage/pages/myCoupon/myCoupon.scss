@@ -39,7 +39,7 @@
         overflow: hidden;
         .top-container{
             width: 100%;
-            height: 140px;
+            height: 114px;
         }
         .b-container{
             height: 44px;
@@ -60,7 +60,7 @@
         }
         .header-img{
             width: 107px;
-            height: 140px;
+            height: 114px;
             overflow: hidden;      
             text-align: center;
             float: left;
@@ -68,7 +68,7 @@
             &::after{
                 content: '';
                 width: 2px;
-                height: 140px;
+                height: 114px;
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -139,7 +139,7 @@
                 color: #fff;
                 position: absolute;
                 right: 10px;
-                bottom: -30px;
+                bottom: -5px;
                 border: none;
                 &.used{
                     background-color: #D2CECE;
@@ -150,9 +150,34 @@
                     background-color: transparent;
                     border-radius: 0;
                     height: 44px;
+                    bottom: -10px;
                 }
             }
         }
        
     }
+}
+
+@media (max-width: 370px) { 
+    .sub-content{
+        .item{
+            .top-container{
+                height: 140px;
+            }
+            .header-img{
+                height: 140px; 
+                &::after{
+                    height: 140px;
+                }
+            }
+            .info{
+                .use-now{
+                    bottom: -30px;
+                    &.pasted{
+                        bottom: -30px;
+                    }
+                }
+            }
+        }
+    }   
 }

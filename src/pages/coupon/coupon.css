@@ -117,3 +117,7 @@
         right: 10px;
         bottom: 0px;
         border: none; }
+
+@media (max-width: 370px) {
+  .sub-content .item .info .persent {
+    width: 80px; } }
