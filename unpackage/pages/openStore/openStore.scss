@@ -1,0 +1,213 @@
+@import '../../assets/css/const.scss';
+
+body{
+    background-color: #fff;
+}
+.home-content{    
+    overflow: hidden;
+    padding-top: 44px;
+    .b-content{
+        padding: 0 13px;
+        border-bottom: 10px solid rgba($borderColor, .2);
+        .sub-title{
+            &.second{
+                border-top: 10px solid $borderColor;
+            }
+            .tri{
+                display: inline-block;
+                vertical-align: top;
+                width: 0; 
+                height: 0; 
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;                
+                border-top: 6px solid $borderColor;
+                margin: 8px 4px 0 0;
+            }
+            font-size: 18px;
+            color: $fontColor;
+            margin: 16px 0 10px 0;
+        }
+        .card-info{
+            line-height: 22px;
+            background-color: #fff4cd;
+            color: $moreLightColor;
+            padding-left: 15px;
+        }
+        .card-img{
+            margin-top: 14px;
+            .img{
+                width: 102px;
+                height: 102px;
+                img{
+                    width: 100%;
+                }
+            }
+            p{
+                color: $moreLightColor;
+                text-align: right;
+            }
+        }
+        .set-input-tips{
+            padding: 8px 6px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #999;
+            background-color: #ededed;
+            margin-bottom: 10px;
+        }
+        .first{
+            width: 100%;
+            line-height: 40px;
+        }
+        .title{
+            font-size: 14px;
+            color: $fontColor;
+        }
+        .first-input{
+            width: 100%;
+            height: 55px;
+            border-bottom: 0.5px solid $borderColor;
+            position: relative;
+            .deco{
+                position: absolute;
+                font-size: 18px;
+                color: #666;
+                top: 14px;
+                left: 0px;
+            }
+            input{
+                width: calc(100% - 100px);
+                height: 55px;
+                font-size: 14px;
+                border: none;
+                background-color: transparent;
+                text-indent: 22px;
+            }
+            .all-b{
+                width: 100px;
+                line-height: 55px;
+                text-align: right;
+                color: $themeColor;
+                text-decoration: underline;
+            }
+        }
+        .input-list{
+            width: 100%;
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 0.5px solid $borderColor;
+            position: relative;
+            &:nth-last-child(1){
+                border: none;
+            }
+            .l{
+                width: 102px;
+                line-height: 55px;
+            }
+            .r{
+                flex: 1;
+                text-align: right;
+                line-height: 55px;
+                position: relative;
+                &.right-arrow{
+                    padding-right: 13px;
+                    &::after{
+                        position: absolute;
+                        top: 16px;
+                        right: -5px;
+                        display: block;
+                        content: '';
+                        width: 22px;
+                        height: 22px;
+                        background-image: url(../../assets/images/right_arrow.png);
+                        background-size: 22px auto;
+                    }
+                }
+                input, select{
+                    width: 100%;
+                    background-color: transparent;
+                    color: $fontColor;
+                    padding: 10px 0 13px 10px;
+                    border: none;
+                    text-align: right;
+                    font-size: 13px;
+                }
+                input{
+                    padding-right: 3px;
+                    &::-webkit-input-placeholder{
+                        color: #999;
+                    }
+                }
+            }
+            .getCode{
+                position: absolute;
+                top: 14px;
+                left: 60px;
+                padding: 4px 8px;
+                background-color: $themeColor;
+                color: #fff;
+                border-radius: 13px;
+                border: none;
+            }
+        }
+    }
+    .submit{
+        width: 100%;
+        padding: 10px 13px;
+        border-top: 15px solid rgba($borderColor, .2);
+        p{
+            text-align: center;
+            color: $fontColor;
+            a{
+                color: #008aeb;
+            }
+        }
+        button{
+            width: 100%;
+            height: 44px;
+            background-color: $themeColor;
+            color: #fff;
+            font-size: 17px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+.onoffswitch {
+    position: relative; width: 60px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    float: right;
+    margin-top: 12px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 30px; padding: 0; line-height: 30px;
+    border: 2px solid #999999; border-radius: 30px;
+    background-color: #EEEEEE;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 30px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 28px;
+    border: 2px solid #999999; border-radius: 30px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: $themeColor;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: $themeColor;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}

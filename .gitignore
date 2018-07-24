@@ -4,6 +4,7 @@ build
 .gradle
 .idea
 .DS_Store
+*/.DS_Store
 *.log
 build
 manifest.json.release/
