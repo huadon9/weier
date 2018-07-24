@@ -53,7 +53,16 @@
     margin-top: -2px; }
 
 .me-list .list-item {
-  background-color: #fff; }
+  background-color: #fff;
+  display: block; }
+  .me-list .list-item .goods-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
   .me-list .list-item .l {
     width: 121px; }
     .me-list .list-item .l .img {
@@ -67,18 +76,20 @@
     .me-list .list-item .r .info {
       margin-top: 0; }
     .me-list .list-item .r .price {
-      margin-top: 6px; }
-    .me-list .list-item .r .count-price {
-      text-align: right;
-      font-size: 18px;
-      color: #323232;
-      line-height: 35px; }
-      .me-list .list-item .r .count-price .text {
-        font-size: 14px;
-        color: #666; }
-      .me-list .list-item .r .count-price .deco {
-        font-size: 12px;
-        color: #666; }
+      margin-top: 6px;
+      color: #2C9195; }
+  .me-list .list-item .count-price {
+    text-align: right;
+    font-size: 18px;
+    color: #323232;
+    line-height: 35px;
+    padding-right: 13px; }
+    .me-list .list-item .count-price .text {
+      font-size: 14px;
+      color: #666; }
+    .me-list .list-item .count-price .deco {
+      font-size: 12px;
+      color: #666; }
   .me-list .list-item::after {
     display: none; }
 
