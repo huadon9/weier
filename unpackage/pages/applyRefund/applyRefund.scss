@@ -8,12 +8,60 @@ body{
     padding-top: 44px;
    
     .b-content{
+        .goods-item{
+            display: flex;
+            flex-direction: row;
+            border-bottom: 5px solid $backgroundColor;
+        }
+        .l{
+            width: 121px;
+            .img{
+                width: 91px;
+                height: 91px;
+                margin: 14px;
+                border: 1px solid $borderColor;
+                border-radius: 4px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .r{
+            padding: 0 13px 0 0;
+            .name{
+                margin-top: 20px;
+            }
+            .info{
+                margin-top: 0;
+            }
+            .price{
+                margin-top: 6px;
+                color: $themeColor;
+                .contact-store{
+                    padding: 5px 10px;
+                    float: right;
+                    font-size: 13px;
+                    color: $fontColor;
+                    border: 1px solid #d2d2d2;
+                    border-radius: 15px;
+                }
+            }
+            
+        }
       
         .title{
             font-size: 13px;
             color: $lightFontColor;
         }
-   
+        .explain{
+            span{
+                color: $themeColor;
+            }
+            color: $moreLightColor;
+            border-bottom: 0.5px solid $borderColor;
+            padding: 5px 13px;
+        }
         .input-list{
             width: 100%;
             height: 55px;
@@ -27,7 +75,7 @@ body{
                 height: 22px;
                 position: absolute;
                 top: 17px;
-                right: 11px;
+                right: 9px;
                 background-image: url(../../assets/images/right_arrow.png);
                 background-size: 22px 22px;
                 transform: rotate(90deg);
@@ -60,14 +108,17 @@ body{
                 line-height: 55px;
                 font-size: 15px;
                 color: $fontColor;
+                padding: 0;
                 input{
                     font-size: 15px;
                     border: none;
                     margin-top: -4px;
                     vertical-align: middle;
+                    width: 100%;
+                    text-align: right;
                 }
                select{
-                    width: 100%;
+                    width: calc(100% - 14px);
                     background-color: transparent;
                     padding: 10px 0 13px 10px;
                     border: none;
@@ -78,7 +129,40 @@ body{
                     font-size: 12px;
                     color: $lightFontColor;
                     float: right;
-                }         
+                }  
+                .we-pull-right{
+                    font-size: 14px;
+                    color: $moreLightColor;
+                    margin-top: 7px;
+                    img{
+                        width: 22px;
+                        margin: -3px -5px 0 0;
+                    }
+                    .handle{
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 18px;
+                        text-align: center;
+                        color: $lightFontColor;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-top: 5px;
+                        background-color: #dedede;
+                        &.disable{
+                            background-color: rgba($color: #dedede, $alpha: 0.5);
+                        }
+                    }
+                    input{
+                        height: 30px;
+                        width: 50px;
+                        text-align: center;
+                        background-color: #dedede;
+                        border: none;
+                        margin-top: 5px;
+                        vertical-align: top;
+                    }
+                }       
             }
         }
     }

@@ -1,0 +1,60 @@
+@import '../../assets/css/const.scss';
+.deco{
+    padding: 0 13px;
+    margin-top: 25px;
+    .top-red{
+        width: 100%;
+        height: 15px;
+        border-radius: 8px;
+        background-color: $themeColor;
+    }
+    .info-list{
+        width: calc(100% - 26px);
+        margin: 0 auto;
+        background-color: #fff;
+        border: 1px solid $borderColor;
+        border-top: none;
+        .title{
+            text-align: center;
+            font-size: 18px;
+            color: $themeColor;
+            line-height: 68px;
+            img{
+                width: 34px;
+                margin-right: 10px;
+            }
+        }
+        p{
+            text-align: center;
+            font-size: 13px;
+            color: $fontColor;
+            line-height: 24px;
+            &.time{
+                font-size: 18px;
+                color: $themeColor;
+                margin-top: 10px;
+            }
+        }
+        .handle{
+            overflow: hidden;
+            a{
+                display: block;
+                width: 100px;
+                height: 40px;
+                border-radius: 4px;
+                line-height: 40px;
+                text-align: center;
+                color: $fontColor;
+                border: 1px solid $borderColor;
+                font-size: 13px;
+                margin: 25px 0 39px 0;
+                &:nth-child(1){
+                    margin-left: 36px;
+                }
+                &:nth-child(2){
+                    margin-right: 36px;
+                }
+            }
+        }
+    }
+}
