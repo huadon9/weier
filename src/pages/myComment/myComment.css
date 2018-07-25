@@ -36,6 +36,9 @@
 .me-list .list-item {
   background-color: #fff;
   display: block; }
+  .me-list .list-item .order-sn {
+    color: #999;
+    padding: 15px 0 0 13px; }
   .me-list .list-item .goods-item {
     display: -webkit-box;
     display: -ms-flexbox;

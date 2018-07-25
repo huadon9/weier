@@ -38,6 +38,10 @@
     .list-item{
         background-color: #fff;
         display: block;
+        .order-sn{
+            color: $moreLightColor;
+            padding: 15px 0 0 13px;
+        }
         .goods-item{
             display: flex;
             flex-direction: row;
