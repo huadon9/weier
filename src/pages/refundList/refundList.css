@@ -40,6 +40,8 @@ body {
   .home-content .me-list .list-item {
     display: block;
     border-bottom: 5px solid #f2f2f2; }
+    .home-content .me-list .list-item::after {
+      display: none; }
     .home-content .me-list .list-item .sn-status {
       line-height: 34px;
       color: #666;

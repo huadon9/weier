@@ -41,6 +41,9 @@ body{
         .list-item{
             display: block;
             border-bottom: 5px solid $backgroundColor;
+            &::after{
+                display: none;
+            }
             .sn-status{
                 line-height: 34px;
                 color: $lightFontColor;
