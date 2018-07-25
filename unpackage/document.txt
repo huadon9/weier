@@ -54,3 +54,5 @@ pushTu 发布素材
 find 发现
 applyResult 申请成功
 openStore 我要开店
+myComment 我的评价
+lookComment 我的评价详情

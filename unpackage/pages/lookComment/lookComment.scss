@@ -1,0 +1,139 @@
+@import '../../assets/css/const.scss';
+body{
+    background-color: #fff;
+}
+
+.we-content{
+    padding: 44px 13px 0 13px;
+}
+.comment-item{    
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid $borderColor;
+    &.tu-item{
+        .imgs{
+            margin-top: 10px;
+            border: none;
+            .img{
+                width: 105px;
+                height: 105px;
+            }
+            .video{
+                position: relative;
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background-image: url(../../assets/images/video_icon.png);
+                    background-size: 50px 50px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -25px 0 0 -25px;
+                }
+            }
+        }
+        border-bottom: 5px solid #e3e3e8;
+        &:nth-last-child(1){
+            border: none;
+        }
+        .videos{
+            width: 100%;
+            &.hide{
+                display: none;
+            }
+            video{
+                width: 100%;
+            }
+        }
+    }
+    .user{
+        margin-top: 10px;
+        overflow: hidden;
+        .img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid $borderColor;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+        .name-time{
+            padding-left: 10px;
+            p{
+                &:nth-child(1){
+                    color: $fontColor;
+                    margin-top: 4px;
+                }
+                &:nth-child(2){
+                    color: $lightFontColor;
+                    font-size: 10px;
+                }
+            }
+        }
+        .share{
+            padding: 0 0 13px 15px;
+            img{
+                width: 18px;
+            }
+        }
+    }
+    .text{
+        color: $fontColor;
+        line-height: 22px;
+        margin-top: 6px;
+    }
+    .true-text{
+        font-size: 10px;
+        color: $lightFontColor;
+        position: relative;
+        margin-top: 10px;
+        &.ellipsis{
+            @include lineClamp(3);
+        }
+        .see-all{
+            width: 60px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+            &.downed{
+                img{
+                    transform: rotate(180deg);
+                }
+            }
+            .we-pull-right{
+                .s-text{
+                    color: $themeColor;
+                }    
+                
+            }
+            img{
+                width: 8px;
+                margin-top: -2px;
+            }
+        }
+    }
+    .imgs{
+        overflow: hidden;        
+        .img{
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            margin: 0 5px 10px 0;
+            float: left;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .store-reply{
+        background-color: $backgroundColor;
+        color: $lightFontColor;
+        padding: 10px 5px;
+      
+    }
+}

@@ -22,7 +22,8 @@
     text-align: center;
     line-height: 42px;
     position: relative;
-    border-right: 0.5px solid #bfbfbf; }
+    border-right: 0.5px solid #bfbfbf;
+    font-size: 14px; }
     .sub-select div:nth-last-child(1) {
       border: none; }
     .sub-select div.active {
@@ -31,23 +32,6 @@
 .me-list .list-item:after {
   left: 0;
   right: 0; }
-
-.me-list .store {
-  padding: 0 13px;
-  color: #323232;
-  background-color: #fff;
-  line-height: 40px; }
-  .me-list .store a {
-    color: inherit; }
-  .me-list .store .s-icon {
-    width: 15px;
-    margin-top: -3px; }
-  .me-list .store .a-icon {
-    width: 20px;
-    margin-top: -2px; }
-  .me-list .store .we-pull-right {
-    font-size: 13px;
-    color: #EC5151; }
 
 .me-list .list-item {
   background-color: #fff;
@@ -67,44 +51,23 @@
       height: 91px;
       margin: 14px; }
   .me-list .list-item .r {
-    padding: 0 13px 0 0; }
+    padding: 0 13px 0 0;
+    position: relative; }
     .me-list .list-item .r .name {
       margin-top: 20px; }
     .me-list .list-item .r .info {
-      margin-top: 0; }
-    .me-list .list-item .r .price {
-      margin-top: 6px;
-      color: #2C9195; }
-  .me-list .list-item .count-price {
-    text-align: right;
-    font-size: 18px;
-    color: #323232;
-    line-height: 35px;
-    padding-right: 13px; }
-    .me-list .list-item .count-price .text {
-      font-size: 14px;
-      color: #666; }
-    .me-list .list-item .count-price .deco {
-      font-size: 12px;
-      color: #666; }
-  .me-list .list-item::after {
-    display: none; }
-
-.me-list .handle {
-  text-align: right;
-  padding: 10px 13px;
-  background-color: #fff;
-  margin-bottom: 5px;
-  border-top: 1px solid rgba(153, 153, 153, 0.1); }
-  .me-list .handle button {
-    width: 74px;
-    height: 26px;
-    border-radius: 13px;
-    background-color: #fff; }
-    .me-list .handle button.gray-btn {
-      color: #666;
-      border: 0.5px solid #666; }
-    .me-list .handle button.active-btn {
+      margin-top: 2px; }
+    .me-list .list-item .r .comment {
+      position: absolute;
+      right: 13px;
+      bottom: 10px;
+      width: 74px;
+      height: 26px;
+      border-radius: 13px;
+      background-color: #fff;
       color: #2C9195;
       border: 0.5px solid #2C9195;
       margin-left: 15px; }
+      .me-list .list-item .r .comment.active {
+        background-color: #2C9195;
+        color: #fff; }
