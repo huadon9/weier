@@ -1,8 +1,141 @@
+@charset "UTF-8";
 .home-content {
   background-color: #fff;
   overflow: hidden;
-  margin-bottom: 50px; }
+  margin-top: 145px; }
+  .home-content .we-search {
+    padding: 0 13px; }
+  .home-content .sub-select {
+    width: 100%;
+    height: 42px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 10px;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 99; }
+    .home-content .sub-select div {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      color: #323232;
+      text-align: center;
+      line-height: 42px;
+      position: relative; }
+      .home-content .sub-select div.active {
+        color: #2C9195; }
+        .home-content .sub-select div.active::before {
+          content: '';
+          position: absolute;
+          display: block;
+          height: 1px;
+          bottom: 0;
+          left: 15px;
+          right: 15px;
+          background-color: #2C9195; }
+      .home-content .sub-select div.asc::after {
+        content: '↾';
+        font-size: 14px; }
+      .home-content .sub-select div.des::after {
+        content: '⇂';
+        font-size: 14px; }
+      .home-content .sub-select div .show-type {
+        display: inline-block;
+        vertical-align: middle;
+        width: 40px;
+        height: 40px; }
+        .home-content .sub-select div .show-type.list::after {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-image: url(../../assets/images/list_show_icon.png);
+          background-size: 20px auto;
+          background-repeat: no-repeat;
+          margin: 10px; }
+        .home-content .sub-select div .show-type.block::after {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-image: url(../../assets/images/block_show_icon.png);
+          background-size: 20px auto;
+          background-repeat: no-repeat;
+          margin: 8px 10px; }
+  .home-content .me-list.block-show {
+    overflow: hidden;
+    border-top: 1px solid #f2f2f2; }
+    .home-content .me-list.block-show .list-item {
+      display: block;
+      width: 50%;
+      float: left;
+      border-bottom: 6px solid #f2f2f2; }
+      .home-content .me-list.block-show .list-item:nth-child(2n+1) {
+        border-right: 1px solid #f2f2f2; }
+      .home-content .me-list.block-show .list-item:nth-child(2n+2) {
+        border-left: 1px solid #f2f2f2; }
+      .home-content .me-list.block-show .list-item::after {
+        display: none; }
+      .home-content .me-list.block-show .list-item .l {
+        width: 100%; }
+        .home-content .me-list.block-show .list-item .l .img {
+          margin: 10px auto; }
+      .home-content .me-list.block-show .list-item .r .info {
+        margin-top: 8px; }
+      .home-content .me-list.block-show .list-item .r .price {
+        margin: 8px 0; }
 
 .search-top {
   width: 100%;
-  margin-top: 10px; }
+  position: fixed;
+  top: 44px;
+  left: 0;
+  z-index: 99;
+  padding: 10px 0;
+  background-color: #fff; }
+
+.cover-bg {
+  z-index: 94; }
+
+.choice-goods {
+  padding: 20px 13px; }
+  .choice-goods span {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    margin: 0 10px 10px 0; }
+    .choice-goods span.active {
+      border-color: #2C9195;
+      color: #2C9195; }
+
+.hot-search {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 98px;
+  z-index: 999;
+  background-color: #fff;
+  padding: 0 13px; }
+  .hot-search.hide {
+    display: none; }
+  .hot-search .title {
+    font-size: 15px;
+    color: #2C9195;
+    margin: 10px 0; }
+  .hot-search span {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 20px;
+    border: 1px solid #bfbfbf;
+    color: #666;
+    border-radius: 15px;
+    margin: 0 10px 10px 0; }
