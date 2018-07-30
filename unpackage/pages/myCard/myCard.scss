@@ -1,0 +1,96 @@
+@import '../../assets/css/const.scss';
+html,body{
+    height: 100%;
+}
+.we-content{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/images/card_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .user{
+        text-align: center;
+        margin-top: 25px;
+        .logo{
+            float: right;
+            background-image: url(../../assets/images/card_logo.png);
+            width: 93px;
+            height: 25px;
+            background-size: 93px auto;
+            margin-top: -10px;
+        }
+        .img{
+            width: 61px;
+            height: 61px;
+            border: 1px solid $borderColor;
+            border-radius: 50%;
+            background-image: url(../../assets/images/demo.png);
+            background-size: 61px auto;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 15px;
+            color: $fontColor;
+            line-height: 1;
+            margin-top: 10px;
+        }
+    }
+    .qr{
+        width: 192px;
+        background-color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 20px auto;
+        text-align: center;
+        .qr-img{
+            width: 143px;
+            height: 143px;
+            margin: 10px auto;
+            img{
+                overflow: hidden;
+            }
+        }
+        p{
+            font-size: 15px;
+            color: $fontColor;
+        }
+        .info{
+            margin-top: 50px;
+            font-size: 15px;
+            color: $lightFontColor;
+        }
+    }
+}
+.onoffswitch {
+    position: relative; width: 60px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;   
+    margin: 12px auto;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 30px; padding: 0; line-height: 30px;
+    border: 2px solid #999999; border-radius: 30px;
+    background-color: #EEEEEE;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 30px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 28px;
+    border: 2px solid #999999; border-radius: 30px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: $themeColor;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: $themeColor;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
