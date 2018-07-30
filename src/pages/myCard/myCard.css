@@ -16,7 +16,7 @@ html, body {
       width: 93px;
       height: 25px;
       background-size: 93px auto;
-      margin-top: -10px; }
+      margin: -10px 13px 0 0; }
     .we-content .user .img {
       width: 61px;
       height: 61px;
@@ -40,9 +40,10 @@ html, body {
     .we-content .qr .qr-img {
       width: 143px;
       height: 143px;
-      margin: 10px auto; }
+      margin: 10px auto;
+      overflow: hidden; }
       .we-content .qr .qr-img img {
-        overflow: hidden; }
+        width: 100%; }
     .we-content .qr p {
       font-size: 15px;
       color: #323232; }
