@@ -58,3 +58,4 @@ myComment 我的评价
 lookComment 我的评价详情
 refundList 退换货列表
 mydis 我的分销
+myLike 我的收藏

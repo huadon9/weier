@@ -1,0 +1,232 @@
+@import '../../assets/css/const.scss';
+
+.we-header{
+    .we-pull-right{
+        width: auto;
+        font-size: 13px;
+        color: $themeColor;
+    }
+}
+.we-content{
+    padding: 0;
+    margin: 44px 0 60px 0;
+    overflow: hidden;
+    .sub-select{
+        width: 100%;
+        height: 42px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        border-bottom: 0.5px solid $borderColor;
+        div{
+            flex: 1;
+            color: $fontColor;
+            text-align: center;
+            line-height: 42px;
+            position: relative;
+            border-right: 0.5px solid $borderColor;
+            &:nth-last-child(1){
+                border: none;
+            }
+            &.active{
+                color: $themeColor;
+                &::before{
+                    content: '';
+                    width: 50px;
+                    position: absolute;
+                    display: block;
+                    height: 1px;
+                    bottom: 0;
+                    left: 50%;
+                    margin-left: -25px;
+                    background-color: $themeColor;
+                }
+            }
+            &.asc{
+                &::after{
+                    content: '↾';
+                    font-size: 14px;
+                }
+            }
+            &.des{
+                &::after{
+                    content: '⇂';
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .store-goods{
+        overflow: hidden;        
+        border-radius: 5px;
+        .goods-item{
+            display: flex;
+            flex-direction: row;
+            background-color: #fff;
+            margin-bottom: 5px;
+            padding-top: 10px;
+            .select{
+                width: 40px;
+                height: 40px;
+                margin: 25px -13px 0 0;
+                &.hide{
+                    display: none;
+                }
+                &.selected{
+                    &::after{                    
+                        border: none;
+                        border-radius: 50%;
+                        margin: 11px 0 0 13px;
+                        background-image: url(../../assets/images/choiced_s.png);
+                        background-size: 15px auto;
+                    }   
+                }
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid $borderColor;
+                    border-radius: 50%;
+                    margin: 11px 0 0 13px;
+                }
+            }
+            .img{
+                width: 91px;
+                height: 91px;
+                border: 1px solid $borderColor;
+                border-radius: 3px;
+                margin: 0 0 10px 13px;
+                img{
+                    width: 100%;
+
+                }
+            }
+            .info{
+                flex: 1;
+                padding: 0 13px 0 10px;
+                .name{
+                    color: $fontColor;
+                    height: 68px;
+                    font-weight: 600;
+                }
+                .price-count{
+                    overflow: hidden;
+                    .price{
+                        font-size: 13px;
+                        color: $themeColor;
+                    }
+                    .we-pull-right{
+                        font-size: 14px;
+                        color: $moreLightColor;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        height: 30px;
+                        img{
+                            width: 22px;
+                            margin: -3px -5px 0 0;
+                        }                    
+                        .handle{
+                            width: 30px;
+                            height: 28px;
+                            line-height: 28px;
+                            font-size: 18px;
+                            text-align: center;
+                            color: $lightFontColor;
+                            display: inline-block;
+                            vertical-align: top;
+                            
+                            &.disable{
+                                background-color: rgba($color: #dedede, $alpha: 0.5);
+                            }
+                        }
+                        .sub{
+                            border-right: 1px solid #ddd;
+                        }
+                        .add{
+                            border-left: 1px solid #ddd;
+                        }
+                        input{
+                            height: 28px;
+                            width: 30px;
+                            text-align: center;
+                            border: none;
+                            vertical-align: top;
+                        }
+                    }
+                }
+                .spec{
+                    .down-arrow{
+                        width: 15px;     
+                        transform: rotate(90deg);
+                        margin-left: 4px;
+                    }
+                }
+                select{
+                    -webkit-appearance: none;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.sub-footer{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    color: $fontColor;
+    &.hide{
+        display: none;
+    }
+    .we-pull-right{
+        button{
+            height: 30px;
+            border-radius: 15px;
+            background-color: #fff;
+            margin-right: 10px;
+            &.move-to-like{
+                width: 96px;
+                border: 1px solid $moreLightColor;
+                color: $moreLightColor;
+            }
+            &.delete{
+                width: 75px;
+                border: 1px solid $themeColor;
+                color: $themeColor;
+            }
+        }
+        
+    }    
+    .select-all{
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+        &.selected{
+            &::after{                    
+                border: none;
+                border-radius: 50%;
+                margin: 11px 0 0 13px;
+                background-image: url(../../assets/images/choiced_s.png);
+                background-size: 15px auto;
+            }   
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid $borderColor;
+            border-radius: 50%;
+            margin: 11px 0 0 13px;
+        }
+    }
+}
